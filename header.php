@@ -24,7 +24,7 @@
                         
                     </div>
                     <div class="right-column">
-                        <div class="location">
+                        <!-- <div class="location">
                             <span class="flaticon-cursor"></span>
                             <form action="#" class="location-switcher">
                                 <select class="selectpicker">
@@ -34,7 +34,7 @@
                                     
                                 </select>
                             </form>
-                        </div>
+                        </div> -->
                         <div class="phone-number"><i class="flaticon-calling"></i><a href="tel:<?php  echo $setting['phone']; ?>"></a><?php  echo $setting['phone']; ?></div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                     <div class="inner-container">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="assets/images/klogo2.png" alt=""></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/klogo2.png" alt="Logo Bem"></a></div>
                         </div>
                         <div class="right-column">
                             <!--Nav Box-->

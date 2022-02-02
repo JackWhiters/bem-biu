@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="widget contact-widget style-two">
-                            <h4>Do You Have Any Question? Please <br> Contact Our Team</h4>
+                            <h4>Punya Pertanyaan? <br> Hubungi Kami</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="wrapper-box">

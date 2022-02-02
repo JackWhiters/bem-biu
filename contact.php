@@ -144,13 +144,15 @@
                                             <div class="icon-box">
                                                 <div class="icon"><span class="flaticon-calling"></span></div>
                                                 <div class="text-area">
-                                                    <div class="text"><strong>Phone</strong><a href="tel:<?php echo $setting['phone']; ?>"><?php echo $setting['phone']; ?></a></div>
+                                                    <div class="text">
+                                                        <strong>Phone</strong><a href="tel:<?php echo $setting['phone']; ?>"><?php echo $setting['phone']; ?></a></div>
                                                 </div>
                                             </div>
                                             <div class="icon-box">
                                                 <div class="icon"><span class="flaticon-mail"></span></div>
                                                 <div class="text-area">
-                                                    <div class="text"><strong>Email</strong><a style="" href="mail:<?php echo $setting['email']; ?>"><?php echo $setting['email']; ?></a></div>
+                                                    <div class="text">
+                                                        <strong>Email</strong><a style="" href="mail:<?php echo $setting['email']; ?>"><?php echo $setting['email']; ?></a></div>
                                                 </div>
                                             </div>
                                         </div>

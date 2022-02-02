@@ -24,7 +24,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Transide  Transport & Logistics HTML Template</title>
+<title>BEM BIU</title>
 <!-- Stylesheets -->
 <link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">

@@ -1,1 +1,1 @@
-<title>BEM BIU</title>
+<title>Admin Panel - BEM BIU</title>

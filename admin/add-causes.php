@@ -8,7 +8,7 @@ include 'auth.php';
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php include"title.php"; ?></title>
+  <title><?php include "title.php"; ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,11 +26,11 @@ include 'auth.php';
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
  <!-- Navbar -->
-   <?php include"topbar.php"; ?>
+   <?php include "topbar.php"; ?>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
+  <?php include "sidebar.php"; ?>
 <?php
 $edit = $_GET['edit'];
 

@@ -28,11 +28,11 @@ $a=8;
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
  <!-- Navbar -->
-   <?php include"topbar.php"; ?>
+   <?php include "topbar.php"; ?>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
+  <?php include "sidebar.php"; ?>
 
 <?php
 $_GET['delete_id'];

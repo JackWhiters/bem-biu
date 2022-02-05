@@ -45,7 +45,7 @@ if(isset($_GET['delete_id']))
 
 $edit = $_GET['edit'];
 
- $resultt = mysqli_query($con,"SELECT * FROM faqs where id=".$edit."");
+ $resultt = mysqli_query($con,"SELECT * FROM faqs where id='.$edit.'");
  $roww = mysqli_fetch_array($resultt);
 $location = mysqli_query($con,"SELECT * FROM faqs ORDER BY id DESC");
 

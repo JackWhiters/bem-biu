@@ -100,7 +100,7 @@
                     </div>
                     <div class="icon-box">
                         <div class="icon"><span class="flaticon-mail"></span></div>
-                        <div class="text"><strong>Email</strong><a href="tel:(+61)32456789790">supportyou@transida.com</a></div>
+                        <div class="text"><strong>Email</strong><a href="tel:(+61)32456789790">bem-biu@gmail.com</a></div>
                     </div>
                 </div>
                 <!-- Link Btn -->
@@ -171,8 +171,8 @@
         </div>-->
         <div class="background-text">
             <div data-parallax='{"x": 100}'>
-                <div class="text-1">transida</div>
-                <div class="text-2">transida</div>
+                <div class="text-1">bem biu</div>
+                <div class="text-2">bem biu</div>
             </div>                
         </div>
         <div class="swiper-container banner-slider">

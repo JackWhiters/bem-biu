@@ -10,7 +10,7 @@ $a=1;
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <?php include"title.php"; ?>
+  <?php include "title.php"; ?>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -38,12 +38,12 @@ $a=1;
 <div class="wrapper">
 
   <!-- Navbar -->
-   <?php include"topbar.php"; ?>
+   <?php include "topbar.php"; ?>
    
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
+  <?php include "sidebar.php"; ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">

@@ -3,7 +3,7 @@
 $dbHost     = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
-$dbName     = "php-cms";
+$dbName     = "bem-biu";
 
 // Create database connection
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

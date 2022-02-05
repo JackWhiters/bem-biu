@@ -9,7 +9,8 @@ $a=11;
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<?php include"title.php"; ?>
+  
+<?php include "title.php"; ?>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,60 +27,61 @@ $a=11;
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
- <!-- Navbar -->
-   <?php include"topbar.php"; ?>
-  <!-- /.navbar -->
+  <!-- Navbar -->
+    <?php include 'topbar.php'; ?>
+    <!-- /.navbar -->
 
-  <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
-<?php
-date_default_timezone_set('Asia/Kolkata');
-$today = date("D d M Y");
-$edit = 1;
+    <!-- Main Sidebar Container -->
+    <?php include "sidebar.php"; ?>
+  <?php
+  date_default_timezone_set('Asia/Kolkata');
+  $today = date("D d M Y");
+  $edit = 1;
 
- $resultt = mysqli_query($con,"SELECT * FROM about where id=".$edit."");
- $roww = mysqli_fetch_array($resultt);
+  $resultt = mysqli_query($con,"SELECT * FROM about where id=".$edit."");
+  $roww = mysqli_fetch_array($resultt);
 
-if(isset($_POST['publise'])){
-	
-$title1 = $_POST['title'];
-$title = str_replace("'","\'", $title1);
-$short1 = $_POST['short'];
-$short = str_replace("'","\'", $short1);
-$descrip1 = $_POST['descrip'];
-$descrip = str_replace("'","\'", $descrip1);
-$url = $_POST['url'];
+  if(isset($_POST['publise'])){
+    
+  $title1 = $_POST['title'];
+  $title = str_replace("'","\'", $title1);
+  $short1 = $_POST['short'];
+  $short = str_replace("'","\'", $short1);
+  $descrip1 = $_POST['descrip'];
+  $descrip = str_replace("'","\'", $descrip1);
+  $url = $_POST['url'];
 
-if($_FILES['lis_img']['name']!=''){
-$lis_img = rand().$_FILES['lis_img']['name'];
-}
-else{
-	$lis_img = $roww["img"];
-}
+  if($_FILES['lis_img']['name']!=''){
+  $lis_img = rand().$_FILES['lis_img']['name'];
+  }
+  else{
+    $lis_img = $roww["img"];
+  }
 
-$tempname = $_FILES['lis_img']['tmp_name'];
+  $tempname = $_FILES['lis_img']['tmp_name'];
 
-$folder = "../images/about/".$lis_img;
-if($edit==''){
+  $folder = "../images/about/".$lis_img;
+  if($edit==''){
 
-move_uploaded_file($tempname, $folder);
+  move_uploaded_file($tempname, $folder);
 
-$insertdata = mysqli_query($con,"INSERT INTO about(title,descrip,img,date,status)VALUES('$title','$descrip','$lis_img','$today','0')");
-echo "<script>alert('Posted Successfully');</script>
-	<script>window.location.href = 'add-about.php'</script>";
-}
-else{
-move_uploaded_file($tempname, $folder);
+  $insertdata = mysqli_query($con,"INSERT INTO about(title,descrip,img,date,status)VALUES('$title','$descrip','$lis_img','$today','0')");
+  echo "<script>alert('Posted Successfully');</script>
+    <script>window.location.href = 'add-about.php'</script>";
+  }
+  else{
+  move_uploaded_file($tempname, $folder);
 
-$insertdata = mysqli_query($con,"UPDATE about SET title='$title',short='$short',descrip='$descrip',img='$lis_img',date='$today' where id=".$edit."");
-echo "<script>alert('Updated Successfully');</script>
-	<script>window.location.href = 'add-about.php'</script>";
-}
+  $insertdata = mysqli_query($con,"UPDATE about SET title='$title',short='$short',descrip='$descrip',img='$lis_img',date='$today' where id=".$edit."");
+  echo "<script>alert('Updated Successfully');</script>
+    <script>window.location.href = 'add-about.php'</script>";
+  }
 
 
-}
+  }
 
-?>
+  ?>
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -121,7 +123,7 @@ echo "<script>alert('Updated Successfully');</script>
               </div>
             </div>
 			<div class="card-header">
-			<div class="form-group">
+			  <div class="form-group">
                     <label for="exampleInputFile">Select Img<span style="color:red;">(only compresed)</span></label>
 					<p style="color:red;">img size 560px x 350px</p>
                         <input name="lis_img" type="file">
@@ -141,7 +143,7 @@ echo "<script>alert('Updated Successfully');</script>
                   </div>
                 </div>
             </div>
-          </div>
+        </div>
 		  </form>
         </div>
         <!-- /.col-->
@@ -151,7 +153,7 @@ echo "<script>alert('Updated Successfully');</script>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-   <?php include"footer.php"; ?>
+   <?php include "footer.php"; ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

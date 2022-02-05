@@ -10,7 +10,7 @@ $a=7;
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<?php include"title.php"; ?>
+<?php include "title.php"; ?>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,17 +28,17 @@ $a=7;
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
  <!-- Navbar -->
-   <?php include"topbar.php"; ?>
+   <?php include "topbar.php"; ?>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
+  <?php include "sidebar.php"; ?>
 <?php
 date_default_timezone_set('Asia/Kolkata');
 $today = date("D d M Y");
 $edit = $_GET['edit'];
 
- $resultt = mysqli_query($con,"SELECT * FROM blog where id=".$edit."");
+ $resultt = mysqli_query($con,"SELECT * FROM blog where id='.$edit.'");
  $roww = mysqli_fetch_array($resultt);
 
 if(isset($_POST['publise'])){
@@ -50,31 +50,41 @@ $descrip1 = $_POST['descrip'];
 $descrip = str_replace("'","\'", $descrip1);
 $url = $_POST['url'];
 
-if($_FILES['lis_img']['name']!=''){
+if($_FILES['lis_img']['name'] != ''){
 $lis_img = rand().$_FILES['lis_img']['name'];
+echo "<pre>";
+print_r($_FILES);
 }
 else{
 	$lis_img = $roww["img"];
 }
 
+
 $tempname = $_FILES['lis_img']['tmp_name'];
 $folder = "images/blog/".$lis_img;
-$valid_ext = array('png','jpeg','jpg');
-// file extension
-$file_extension = pathinfo($folder, PATHINFO_EXTENSION);
-$file_extension = strtolower($file_extension);
-// Check extension
-if(in_array($file_extension,$valid_ext)){
-// Compress Image
-compressImage($tempname,$folder,60);
-}
+$valid_ext = array(['png','jpeg','jpg']);
+    // file extension
+    $file_extension = pathinfo($folder, PATHINFO_EXTENSION);
+    $file_extension = strtolower($file_extension);
+    // Check extension
+    if(in_array($file_extension,$valid_ext))
+    {
+    // Compress Image
+    compressImage($tempname,$folder,60);
+    }else{
+    echo "Invalid file type.";
+  }
+
 if($edit==''){
+  move_uploaded_file($tempname, $folder);
 $insertdata = mysqli_query($con,"INSERT INTO blog(title,category,descrip,img,url,date,status)VALUES('$title','$category','$descrip','$lis_img','$url','$today','0')");
 echo "<script>alert('Posted Successfully');</script>
 	<script>window.location.href = 'add-blog.php'</script>";
 }
-else{
-$insertdata = mysqli_query($con,"UPDATE blog SET title='$title',category='$category',descrip='$descrip',img='$lis_img',url='$url',date='$today' where id=".$edit."");
+else
+{
+  move_uploaded_file($tempname, $folder);
+$insertdata = mysqli_query($con,"UPDATE blog SET title='$title',category='$category',descrip='$descrip',img='$lis_img',url='$url',date='$today' where id='.$edit.'");
 echo "<script>alert('Updated Successfully');</script>
 	<script>window.location.href = 'add-blog.php'</script>";
 }
@@ -97,8 +107,8 @@ function compressImage($source, $destination, $quality) {
   imagejpeg($image, $destination, $quality);
 
 }
-
 ?>
+
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -120,8 +130,6 @@ function compressImage($source, $destination, $quality) {
         <div class="col-md-8">
 		<form action="" method="post" enctype="multipart/form-data">
           <div class="card card-outline card-info">
-            
-			 
 			<div class="card-header">
              <div class="form-group">
                   <label>Enter Title</label>
@@ -184,7 +192,7 @@ function compressImage($source, $destination, $quality) {
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-   <?php include"footer.php"; ?>
+   <?php include "footer.php"; ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

@@ -47,7 +47,7 @@
                 <div class="inner-container">
                     <!--Logo-->
                     <div class="logo-box">
-                        <div class="logo"><a href="index.php"><img src="assets/images/klogo2.png" alt=""></a></div>
+                        <div class="logo"><a href="index.php"><img src="assets/images/klogo2.png" height="80px" width="80px" alt=""></a></div>
                     </div>
                     <div class="right-column">
                         <!--Nav Box-->
@@ -98,7 +98,7 @@
                     <div class="inner-container">
                         <!--Logo-->
                         <div class="logo-box">
-                            <div class="logo"><a href="index.html"><img src="assets/images/klogo2.png" alt="Logo Bem"></a></div>
+                            <div class="logo"><a href="index.html"><img src="assets/images/klogo2.png" height="80px" width="80px" alt="Logo Bem"></a></div>
                         </div>
                         <div class="right-column">
                             <!--Nav Box-->

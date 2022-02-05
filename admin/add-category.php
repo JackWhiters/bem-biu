@@ -2,11 +2,12 @@
 error_reporting(0);
 include 'conn.php';
 include 'auth.php';
-
 $a=6;
+
 ?>
+
 <!DOCTYPE html>
-<html>
+<html style="height:auto">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,52 +26,49 @@ $a=6;
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini">
+<body class="hold-transition sidebar-mini" style="height:auto">
 <div class="wrapper">
  <!-- Navbar -->
-   <?php include"topbar.php"; ?>
+    <?php include "topbar.php"; ?>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <?php include"sidebar.php"; ?>
+    <?php include "sidebar.php"; ?>
+    <?php
+    if(isset($_GET['delete_id']))
+    {
+    $query_delete="DELETE FROM category WHERE id='".$_GET['delete_id']."'";
+    $p = mysqli_query($con, $query_delete);
+    echo "<script>alert('Deleted Successfully');</script>
+      <script>window.location.href = 'add-category.php'</script>";
+    }
 
-<?php
-if(isset($_GET['delete_id']))
-{
- $query_delete="DELETE FROM category WHERE id='".$_GET['delete_id']."'";
- $p = mysqli_query($con, $query_delete);
- echo "<script>alert('Deleted Successfully');</script>
-	<script>window.location.href = 'add-category.php'</script>";
-}
-
-$edit = $_GET['edit'];
-
- $resultt = mysqli_query($con,"SELECT * FROM category where id=".$edit."");
- $roww = mysqli_fetch_array($resultt);
-$location = mysqli_query($con,"SELECT * FROM category");
+    $edit = $_GET['edit'];
+    $resultt = mysqli_query($con,"SELECT * FROM category WHERE id='.$edit.'");
+    $roww = mysqli_fetch_array($resultt);
+    $location = mysqli_query($con,"SELECT * FROM category");
 
 
-if(isset($_POST['add'])){
-	
-$name = $_POST['cat_name'];
+    if(isset($_POST['add'])){
+      
+      $name = $_POST['cat_name'];
 
-if($edit==''){
+      if($edit=='')
+      { 
+        $insertdata = mysqli_query($con,"INSERT INTO category(cat_name)VALUES('$name')");
+        echo "<script>alert('Added Successfully');</script>
+          <script>window.location.href = 'add-category.php'</script>";
+        }
+      else
+      {
+        $insertdata = mysqli_query($con,"UPDATE category SET cat_name='$name' where id=".$edit."");
+        echo "<script>alert('Updated Successfully');</script> <script>window.location.href = 'add-category.php'</script>";
+      }
 
-$insertdata = mysqli_query($con,"INSERT INTO category(cat_name)VALUES('$name')");
-echo "<script>alert('Added Successfully');</script>
-	<script>window.location.href = 'add-category.php'</script>";
-}
-else{
 
-$insertdata = mysqli_query($con,"UPDATE category SET cat_name='$name' where id=".$edit."");
-echo "<script>alert('Updated Successfully');</script>
-	<script>window.location.href = 'add-category.php'</script>";
-}
+    }
 
-
-}
-
-?>
+    ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -154,7 +152,7 @@ echo "<script>alert('Updated Successfully');</script>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-   <?php include"footer.php"; ?>
+   <?php include "footer.php"; ?>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

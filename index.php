@@ -10,11 +10,20 @@
     $testi = mysqli_query($con,"SELECT * FROM testimonials");
 
     //fetch blog
-    $blog = mysqli_query($con,"SELECT * FROM blog");
+    $program = mysqli_query($con,"SELECT * FROM services ORDER BY id DESC LIMIT 6");
+
+//     $program_main = mysqli_query($con,"SELECT * FROM
+//   (SELECT * FROM services order by id desc limit 5) table_alias order by id limit 3 ");
+
+
 
 
      //fetch services
-    $services = mysqli_query($con,"SELECT * FROM services ORDER BY id DESC LIMIT 3");
+    $berita = mysqli_query($con,"SELECT * FROM blog ORDER BY id DESC LIMIT 1");
+
+    $berita_main = mysqli_query($con,"SELECT * FROM
+  (SELECT * FROM blog order by id desc limit 5) table_alias
+order by id limit 3 ");
 
 ?>
 
@@ -36,8 +45,7 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Yantramanav:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/logo-kabinet.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,178 +70,141 @@
 
    <?php include "header.php"; ?>
 
+       <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <img src="assets/img/logo-kabinet.png" alt="" class="home__img">
+
+                <div class="home__data">
+                    <p class="home__desc">
+                        Website Resmi Badan Eksekutif Mahasiswa
+                    </p>
+                    <h1 class="home__title">
+                        BEM Universitas Bina Insani
+                    </h1>
+                    <p class="home__description">
+                        Badan Eksekutif Mahasiswa Universitas Bina Insani Didirikan pada tanggal 4 Feruari 2021, diketuai oleh Muhammad Aldisyah Rahman dan wakilnya, Raden Fitria Dwiyani Putri.
+                    </p>
+
+                    <div class="link__web">
+
+                        <a href="#video" class="button button--ghost">
+                            Selengkapnya >
+                        </a>
+                        <a href="#about" class="button button--flex">
+                            Bina Insani University >
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     <!-- Hidden Sidebar -->
-    <section class="hidden-sidebar close-sidebar">
-        <div class="wrapper-box">
-            <div class="content-wrapper">
-                <div class="hidden-sidebar-close"><span class="flaticon-remove"></span></div>
-                <div class="text-widget sidebar-widget">
-                    <div class="logo"><a href="index.php"><img src="assets/images/logo.png" alt=""></a></div>
-                    <div class="text">Demoralized by the charms of pleasure of the moment so blinded by desire that they cannot foresees the pain.</div>
-                </div>
-                <!-- PDF Widget -->
-                <div class="pdf-widget sidebar-widget">
-                    <div class="row">
-                        <div class="col-sm-6 column">
-                            <div class="content">
-                                <div class="icon"><img src="assets/images/icons/icon-8.png" alt=""></div>
-                                <h4>Sender <br> Instructions</h4>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 column">
-                            <div class="content">
-                                <div class="icon"><img src="assets/images/icons/icon-8.png" alt=""></div>
-                                <h4>Sender <br> Instructions</h4>
-                            </div>
-                        </div>
-                    </div>                            
-                </div>
-                <!-- Contact Widget -->
-                <div class="contact-widget">
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-cursor"></span></div>
-                        <div class="text">Boat House, 152/21 City Road, <br> Hoxton, N1 6NG, UK.</div>
-                    </div>
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-calling"></span></div>
-                        <div class="text"><strong>Phone</strong><a href="tel:(+61)3245689790">(+61) 324 56 789 & 790</a></div>
-                    </div>
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-mail"></span></div>
-                        <div class="text"><strong>Email</strong><a href="tel:(+61)32456789790">bem-biu@gmail.com</a></div>
-                    </div>
-                </div>
-                <!-- Link Btn -->
-                <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-two"><span><i class="flaticon-up-arrow"></i>Purchase Our Theme </span></a></div>
-            </div>
-        </div>
-    </section>
-    
-    <!--Search Popup-->
-    <div id="search-popup" class="search-popup">
-        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="http://st.ourhtmldemo.com/new/Transida2/index.php">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
-    <!-- Bnner Section -->
-    <section class="banner-section">
-        <!--<div class="left-panel">
-            <div class="side-menu-nav sidemenu-nav-toggler"><span class="flaticon-interface"></span>More</div>
-            <div class="option-box">
-                <div class="icon"><span class="flaticon-tracking"></span></div>
-                <h4>Track <br> Shipment</h4>
-                <div class="order-form-area">
-                    <div class="wrapper-box">
-                        <h4>Track Your Shipment</h4>
-                        <form class="order-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Enter Shipment Number *">
-                            </div>
-                            <div class="form-group">
-                                <select class="selectpicker" name="make">
-                                    <option value="*">Type of Reference *</option>
-                                    <option value=".category-1">Package</option>
-                                    <option value=".category-3">Freight</option>
-                                    <option value=".category-4">Mail of Innovations</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>Track Now</span></button>
-                            </div>
-                        </form>
-                    </div>                        
-                </div>
-            </div> 
-            <div class="option-box">
-                <a href="pricing-plan.php">
-                    <div class="icon"><span class="flaticon-logistics"></span></div>
-                    <h4>Pricing <br> Plan</h4>
-                </a>
-            </div>
-            <div class="option-box">
-                <a href="grequest-quote.php">
-                    <div class="icon"><span class="flaticon-test"></span></div>
-                    <h4>Get A <br>Quote</h4>
-                </a>
-            </div>
-        </div>-->
-        <div class="background-text">
-            <div data-parallax='{"x": 100}'>
-                <div class="text-1">bem biu</div>
-                <div class="text-2">bem biu</div>
-            </div>                
-        </div>
-        <div class="swiper-container banner-slider">
-            <div class="swiper-wrapper">
-                <!-- Slide Item -->
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-1.jpg);">
-                    <div class="content-outer">
-                        <div class="content-box">
-                            <div class="inner text-center">
-                                <h4>Competitve rates </h4>
-                                <h1>safety & reliable on-time</h1>
-                                <div class="text">We denounce with righteous indignation & dislike beguiled</div>
-                                <div class="link-box">
-                                    <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide Item -->
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-2.jpg);">
-                    <div class="content-outer">
-                        <div class="content-box">
-                            <div class="inner text-center">
-                                <h4>Your logistic partner </h4>
-                                <h1>make easy distribution</h1>
-                                <div class="text">To take a trivial example which of us ever undertakes laborious.</div>
-                                <div class="link-box">
-                                    <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
-                                </div>
-                            </div>                               
-                        </div>
-                    </div>
-                </div>
-                <!-- Slide Item -->
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-3.jpg);">
-                    <div class="content-outer">
-                        <div class="content-box">
-                            <div class="inner text-center">
-                                <h4>It’s possible here</h4>
-                                <h1>Shipments delivered on time</h1>
-                                <div class="text">Right to find fault with a man who chooses to enjoy a pleasure.</div>
-                                <div class="link-box">
-                                    <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
-                                </div>
-                            </div>                       
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="banner-slider-nav style-two">
-            <div class="banner-slider-control banner-slider-button-prev"><span><i class="far fa-angle-left"></i>Prev</span></div>
-            <div class="banner-slider-control banner-slider-button-next"><span>Next<i class="far fa-angle-right"></i></span> </div>
-        </div>
-    </section>
-    <!-- End Bnner Section -->
 
+       <!--==================== VIDEO ====================-->
+        <section class="video section" id="video">
+            <div class="video__container container grid">
+                <h2 class="video__title">BEM Universitas Bina Insani</h2>
+                <p class="video__desc">Pengenalan Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="berita section container" id="berita">
+            <h2 class="berita__title">Berita Mengenai BEM BIU</h2>
+            <p class="berita__desc">Berita terkini kegiatan maupun kegiatan program kerja yang dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+             <?php
+                        while($row=mysqli_fetch_array($berita))
+                        {
+                    ?>
+            <div class="berita__container grid">
+                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img">
+                <div class="berita__data-terbaru">
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
+                    </div>
+                    <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <?php
+                        }
+                        ?>
+
+             <div class="berita-lawas__container grid">
+                                     <?php
+                        while($row=mysqli_fetch_array($berita_main))
+                        {
+                    ?>
+                <div class="berita__card">
+                    <img src="admin/images/blog/<?php echo $row['img']; ?>" style="height:300px;width:300px;" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">20 JAN 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
+                    <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                    <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+                                <?php
+                        }
+                ?>
+            </div>
+
+
+
+        </section>
+
+    <section class="program section container" id="program">
+                <h2 class="program__title">Program yang sudah terlaksana</h2>
+                <p class="program__desc">Program kerja yang telah dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani dan divisi-divisinya.</p>
+                <div class="program__container grid">
+                                                 <?php
+                        while($row=mysqli_fetch_array($program))
+                        {
+                    ?>
+                    <div class="program__card">
+                        <img src="admin/images/services/<?php echo $row['img']; ?>" style="height:300px;width:300px;"  class="cards__berita-img" alt="">
+
+                        <div class="detail__upload-berita">
+                            <h3 class="jenis__page-berita">Program</h3>
+                            <i class="ri-arrow-right-s-line"></i>
+                            <p class="tanggal__upload-berita"><?php echo $row['date']; ?><</p>
+                        </div>
+                        <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
+                        <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                        <a href="program.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
+                            <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                    <?php
+                        }
+                    ?>
+    </section>
+
+ 
     <!-- Services Section -->
     <!-- serivice from here -->
-         <section class="services-section style-two ">
+         <!-- <section class="services-section style-two ">
         <div class="auto-container">
             <div class="sec-title text-center">
                 <div class="sub-title">Main Services</div>
@@ -242,7 +213,7 @@
    
         </div>
     </section>
-    
+     -->
     
     
     <!-- boostrap -->
@@ -256,385 +227,10 @@
   transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 </style>
-    
-      <div class="container pb-5">
-          <div class="row ">
-              <?php
-                        while($row=mysqli_fetch_array($services)){
-                    ?>
-              <div class="col-md-4 zoom">
-                   
-                    <div class="card-deck">
-                        <div class="card">
-                            <img class="card-img-top" style="height:270px;" src="admin/images/services/<?php echo $row['img']; ?>" alt="Card image cap">
-                            <div class="card-body">
-                              <h5 class="card-title"><b><a href="single-service.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a></b></h5>
-                              <p class="card-text"><?php echo $row['short']; ?></p>
-                            </div>
-                            <div class="card-footer">
-                             
-                               <div class="link"><a href="single-service.php?id=<?php echo $row['id']; ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-              </div>
-              <?php  } ?>
-          </div>
-      </div>
-    
-    
-
-
-    <!-- About Section -->
-    <section class="about-section" style="background-image: url(assets/images/background/bg-1.jpg);">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="sec-title">
-                        <div class="sub-title">Company</div>
-                        <h2>Providing<br> Reliable Services <br> Since 1998</h2>
-                        <div class="text">We Offer Import & Export assistance foreign businesses in transporting and selling their products in China, India and USA. We connect domestic companies to the international shipping services most suited for their business. </div>
-                        <a href="about.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
-                                <div class="icon"><span class="flaticon-package"></span></div>
-                                <div class="content">
-                                    <span><h4>Import & Export</h4></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
-                                <div class="icon"><span class="flaticon-goal"></span></div>
-                                <div class="content">
-                                    <span><h4>Expand Business</h4></span>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon-box wow fadeInUp" data-wow-duration="1700ms">
-                                <div class="icon"><span class="flaticon-binoculars"></span></div>
-                                <div class="content">
-                                    <span><h4>Experts Assitance</h4></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="icon-box wow fadeInUp" data-wow-duration="1900ms">
-                                <div class="icon"><span class="flaticon-gold"></span></div>
-                                <div class="content">
-                                    <span><h4>Home Delivery</h4></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="image wow fadeInRight" data-wow-duration="1500ms"><img src="assets/images/resource/image-1.jpg" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Whychooseus Section -->
-    <section class="Whychooseus-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <div class="sub-title text-center">Why Choose Us</div>
-                <h2>We Aim to Contribute Well to <br>  Your Company</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 why-choose-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="count">01</span><i class="flaticon-shield"></i></div>
-                        <div class="content">
-                            <h4>Trasparent Pricing</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 why-choose-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="count">02</span><i class="flaticon-delivery"></i></div>
-                        <div class="content">
-                            <h4>On - Time Delivery</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 why-choose-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="count">03</span><i class="flaticon-24-hours"></i></div>
-                        <div class="content">
-                            <h4>Real Time Tracking</h4>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 why-choose-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="count">04</span><i class="flaticon-24-hours"></i></div>
-                        <div class="content">
-                            <h4>24/7 Online Support</h4>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work-process Section -->
-    <section class="work-process-section">
-        <div class="bg" style="background-image: url(assets/images/background/bg-2.jpg);"></div>
-        <div class="auto-container">
-            <div class="sec-title text-center light">
-                <div class="sub-title text-center">How We Work</div>
-                <h2>We Aim to Contribute Well to <br> Your Company</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 work-process-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="count">01</div>
-                        <div class="icon"><span class="flaticon-shipping"></span></div>
-                        <h4>Replenishment <br> & Picking</h4>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 work-process-block">
-                    <div class="inner-box wow fadeInDwon" data-wow-duration="1500ms">
-                        <div class="count">02</div>
-                        <div class="icon"><span class="flaticon-warehouse"></span></div>
-                        <h4>Warehousing <br> Operation</h4>
-                        
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 work-process-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="count">03</div>
-                        <div class="icon"><span class="flaticon-packing-list"></span></div>
-                        <h4>Packaging <br> & Distribution</h4>
-                       
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 work-process-block">
-                    <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                        <div class="count">04</div>
-                        <div class="icon"><span class="flaticon-delivery-1"></span></div>
-                        <h4>Transportation <br> Process</h4>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-text">Simplifying Your Freight & Logistics Needs With a Personal Approach. <a href="contact.php"> Get In Touch</a></div>
-        </div>
-    </section>
-
-    <!-- Industries Covered -->
-    <!--<section class="industries-covered" style="background-image: url(assets/images/background/bg-3.jpg);">
-        <div class="background-text" data-parallax='{"x": 100}'>industries</div>
-        <div class="outer-box side-container">
-            <div class="outer-container">
-                <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "center": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "1" }, "1200":{ "items" : "1" }}}'>
-                    <div class="text-block">
-                        <div class="inner-box">
-                            <div class="image" style="background-image: url(assets/images/resource/image-2.jpg);">
-                            </div>
-                            <div class="content">
-                                <div class="icon"><span class="flaticon-spaceship"></span></div>
-                                <h4>Industrial and <br> Aerospace</h4>
-                                <div class="text">The wise man therefore always holds in <br> these matters to this principle. </div>
-                                <div class="link">
-                                    <a href="#" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-block">
-                        <div class="inner-box">
-                            <div class="image" style="background-image: url(assets/images/resource/image-4.jpg);">
-                            </div>
-                            <div class="content">
-                                <div class="icon"><span class="flaticon-spaceship"></span></div>
-                                <h4>Construction <br> Companies</h4>
-                                <div class="text">The wise man therefore always holds in <br> these matters to this principle. </div>
-                                <div class="link">
-                                    <a href="#" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-block">
-                        <div class="inner-box">
-                            <div class="image" style="background-image: url(assets/images/resource/image-5.jpg);">
-                            </div> 
-                            <div class="content">
-                                <div class="icon"><span class="flaticon-box-1"></span></div>
-                                <h4>Vehicle <br> Manufacturing</h4>
-                                <div class="text">The wise man therefore always holds in <br> these matters to this principle. </div>
-                                <div class="link">
-                                    <a href="#" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Pricing Section -->
-    <!--<section class="pricing-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <div class="sub-title text-center">Pricing & Plans</div>
-                <h2>Our Effective and Affordable <br> Pricing Plans</h2>
-            </div>
-            <div class="row m-0">
-                <div class="col-lg-4 col-md-6 pricing-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="category-wrapper"><div class="category">Basic Plan</div></div>
-                        <div class="price">$89.99</div>
-                        <div class="time">Per Month</div>
-                        <ul class="content">
-                            <li>1 Warehouse </li>
-                            <li>Custom Business Rules</li>
-                            <li>Real Time Rate Shopping</li>
-                            <li>100% Insurance</li>
-                            <li>50 Freight Shipments</li>
-                        </ul>
-                        <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>Buy Now </span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pricing-block style-two">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms" style="background-image: url(assets/images/resource/image-3.jpg);">
-                        <div class="category-wrapper"><div class="category">Standard Plan</div></div>
-                        <div class="price">$129.99</div>
-                        <div class="time">Per Month</div>
-                        <ul class="content">
-                            <li>1 Warehouse </li>
-                            <li>Custom Business Rules</li>
-                            <li>Real Time Rate Shopping</li>
-                            <li>100% Insurance</li>
-                            <li>50 Freight Shipments</li>
-                        </ul>
-                        <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>Buy Now </span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 pricing-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="category-wrapper"><div class="category">Advanced Plan</div></div>
-                        <div class="price">$149.99</div>
-                        <div class="time">Per Month</div>
-                        <ul class="content">
-                            <li>1 Warehouse </li>
-                            <li>Custom Business Rules</li>
-                            <li>Real Time Rate Shopping</li>
-                            <li>100% Insurance</li>
-                            <li>50 Freight Shipments</li>
-                        </ul>
-                        <div class="link-box">
-                            <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>Buy Now </span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Facts Section -->
-    <section class="facts-section">
-        <div class="auto-container">
-            <div class="wrapper-box" style="background-image: url(assets/images/background/bg-4.jpg);">
-                <div class="shape">
-                    <div class="shape-one"><img src="assets/images/resource/image-4.png" alt=""></div>
-                    <div class="shape-two"><img src="assets/images/resource/image-5.png" alt=""></div>
-                    <div class="shape-three"><img src="assets/images/resource/image-6.png" alt=""></div>
-                    <div class="shape-four"><img src="assets/images/resource/image-7.png" alt=""></div>
-                    <div class="shape-five"><img src="assets/images/resource/image-8.png" alt=""></div>
-                </div>
-                <div class="sec-title text-center light">
-                    <div class="sub-title text-center">Interesting Facts</div>
-                    <h2>The Numbers Speak for <br> themselves</h2>
-                </div>
-                <div class="outer-box">
-                    <div class="row">
-                        <!--Column-->
-                        <div class="column counter-column col-md-6">
-                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="content">
-                                    <div class="icon"><img src="assets/images/icons/icon-3.png" alt=""></div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="6500">0</span>
-                                    </div>
-                                    <div class="text">Sucessfully  Delivered</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Column-->
-                        <div class="column counter-column col-md-6">
-                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="content">
-                                    <div class="icon"><img src="assets/images/icons/icon-4.png" alt=""></div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="54">0</span>
-                                    </div>
-                                    <div class="text">Expert Employee</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Column-->
-                        <div class="column counter-column col-md-6">
-                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="content">
-                                    <div class="icon"><img src="assets/images/icons/icon-5.png" alt=""></div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="2495">0</span>
-                                    </div>
-                                    <div class="text">Satisfied Clients</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Column-->
-                        <div class="column counter-column col-md-6">
-                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="content">
-                                    <div class="icon"><img src="assets/images/icons/icon-3.png" alt=""></div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="5">0</span>
-                                    </div>
-                                    <div class="text">Branches Across</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Column-->
-                        <div class="column counter-column col-md-6">
-                            <div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                <div class="content">
-                                    <div class="icon"><img src="assets/images/icons/icon-3.png" alt=""></div>
-                                    <div class="count-outer count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="3879">0</span>
-                                    </div>
-                                    <div class="text">Tons of Goods</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
-            </div>            
-        </div>
-    </section>
+   
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section">
+    <!-- <section class="testimonials-section">
         <div class="auto-container">
             <div class="sec-title text-center">
                 <div class="sub-title text-center">Testimonials</div>
@@ -668,7 +264,7 @@
                 <!-- End -->
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- News Section -->
     <!--<section class="news-section">
@@ -817,6 +413,17 @@
 
 <script src="assets/js/script.js"></script>
 
+    <!--=============== SCROLL UP ===============-->
+    <a href="# " class="scrollup " id="scroll-up ">
+        <i class="ri-arrow-up-fill scrollup__icon "></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js "></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js "></script>
+</body>
 
 </body>
 

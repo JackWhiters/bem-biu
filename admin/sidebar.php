@@ -37,13 +37,13 @@
             </a>
           </li>
 		   <li class="nav-item has-treeview menu-open">
-            <h5 class="pt-2 pb-2" style="color:white;">Services</h5>
+            <h5 class="pt-2 pb-2" style="color:white;">PROGRAM</h5>
 			</li>
 		  <li class="nav-item has-treeview menu-open">
             <a href="add-services.php" class="nav-link <?php if($a==3){ echo 'active'; }?>">
                <i class="fa fa-plus nav-icon"></i>
               <p>
-               Add Service
+               Tambah Program
               </p>
             </a>
           </li> 
@@ -51,20 +51,20 @@
             <a href="view-services.php" class="nav-link <?php if($a==4){ echo 'active'; }?>">
                <i class="fa fa-eye nav-icon"></i>
               <p>
-                View Services
+                Lihat Program
               </p>
             </a>
           </li> 
 		  
 		  <li class="nav-item has-treeview menu-open">
-            <h5 class="pt-2 pb-2" style="color:white;">BLOG SECTION</h5>
+            <h5 class="pt-2 pb-2" style="color:white;">BERITA</h5>
 			</li>
 		  
 		   <li class="nav-item has-treeview menu-open">
             <a href="add-category.php" class="nav-link <?php if($a==6){ echo 'active'; }?>">
                <i class="fa fa-plus nav-icon"></i>
               <p>
-                Add Blog Category
+                Tambah Kategori Berita
               </p>
             </a>
           </li> 
@@ -72,7 +72,7 @@
             <a href="add-blog.php" class="nav-link <?php if($a==7){ echo 'active'; }?>">
                <i class="fa fa-plus nav-icon"></i>
               <p>
-                Add New Blog
+                Tambah Berita
               </p>
             </a>
           </li> 
@@ -81,11 +81,11 @@
             <a href="view-blog.php" class="nav-link <?php if($a==8){ echo 'active'; }?>">
                <i class="fa fa-eye nav-icon"></i>
               <p>
-                View Blog
+                Lihat Berita
               </p>
             </a>
           </li> 
-		  <li class="nav-item has-treeview menu-open">
+		  <!-- <li class="nav-item has-treeview menu-open">
             <h5 class="pt-2 pb-2" style="color:white;">OTHER OPTIONS</h5>
 			</li>
         
@@ -104,7 +104,7 @@
                 FAQ
               </p>
             </a>
-          </li>
+          </li> -->
           
         </ul>
       </nav>

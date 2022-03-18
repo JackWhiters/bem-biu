@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo-kabinet.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styless3.css">
+
+    <title>BEM BIU</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <img src="assets/img/klogo2.png" class="nav__logo" alt="">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Tentang Kami</a>
+                        <i class="ri-arrow-down-s-line" style="color: white;"></i>
+                        <ul class="dropdown__nav">
+                            <li><a href="tentang-kami.html" class="dropdown__link">Tentang BEM</a></li>
+                            <li><a href="visi-misi.html" class="dropdown__link">Visi-Misi</a></li>
+                            <li><a href="sejarah.html" class="dropdown__link">Sejarah</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="detail-berita.html" class="nav__link">Berita & Program</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="struktur-divisi.html" class="nav__link">Struktur & Divisi</a>
+                    </li>
+                    
+                    <li class="nav__item">
+                        <a href="ukm.html" class="nav__link">ukm</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link button--ghost">Hubungi Kami</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <img src="assets/img/logo-kabinet.png" alt="" class="home__img">
+
+                <div class="home__data">
+                    <p class="home__desc">
+                        Website Resmi Badan Eksekutif Mahasiswa
+                    </p>
+                    <h1 class="home__title">
+                        BEM Universitas Bina Insani
+                    </h1>
+                    <p class="home__description">
+                        Badan Eksekutif Mahasiswa Universitas Bina Insani Didirikan pada tanggal 4 Feruari 2021, diketuai oleh Muhammad Aldisyah Rahman dan wakilnya, Raden Fitria Dwiyani Putri.
+                    </p>
+
+                    <div class="link__web">
+
+                        <a href="#video" class="button button--ghost">
+                            Selengkapnya >
+                        </a>
+                        <a href="#about" class="button button--flex">
+                            Bina Insani University >
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--==================== VIDEO ====================-->
+        <section class="video section" id="video">
+            <div class="video__container container grid">
+                <h2 class="video__title">BEM Universitas Bina Insani</h2>
+                <p class="video__desc">Pengenalan Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                <div class="video__content">
+                    <video id="video-file">
+                        <source src="assets/video/video.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button button--flex video__button" id="video-button">
+                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== BERITA ====================-->
+        <section class="berita section container" id="berita">
+            <h2 class="berita__title">Berita Mengenai BEM BIU</h2>
+            <p class="berita__desc">Berita terkini kegiatan maupun kegiatan program kerja yang dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+            <div class="berita__container grid">
+                <img src="assets/img/gambar-berita.jpeg" alt="" class="berita__terbaru-img">
+                <div class="berita__data-terbaru">
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pemira 2022</h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="berita-lawas__container grid">
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">20 JAN 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Program Kerja Divisi Kominfo X Minat Bakat</h2>
+                    <p class="berita__detail">Program kerja yang akan dilaksanakan oleh divisi Kominfo dan Minat Bakat di bulan april 2022 nanti.</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pemira 2022</h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pasangan Calon Ketua dan Wakil ketua Pemira 2022</h2>
+                    <p class="berita__detail">Lebih dekat mengenal kedua pasangan calon ketua dan wakil ketua Bem Biu 2022.</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pemira 2022</h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pemira 2022</h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="berita__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Berita</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Pemira 2022</h2>
+                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <a href="berita.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="primary">
+                <a href="detail-berita.html" class="button button-primary">Lihat Selengkapnya</a>
+            </div>
+
+        </section>
+
+        <!--==================== PROGRAM ====================-->
+
+        <section class="program section container" id="program">
+            <h2 class="program__title">Program yang sudah terlaksana</h2>
+            <p class="program__desc">Program kerja yang telah dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani dan divisi-divisinya.</p>
+            <div class="program__container grid">
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Diklat 2022</h2>
+                    <p class="berita__detail">Kegiatan Diklat 2022 yang dilaksanakan kemarin untuk menerima anggota baru Badan Eksekutif Mahasiswa Universitas Bina Insani.</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Galangan Dana acara Bansos Peduli Bencana Alam</h2>
+                    <p class="berita__detail">Kegiatan Bantuan Sosial yang dilaksanakan oleh Bem Biu untuk bencana alam gempa.</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Acara AFBI</h2>
+                    <p class="berita__detail">Kegiatan yang dilaksanakan dengan ...</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Acara AFBI</h2>
+                    <p class="berita__detail">Kegiatan yang dilaksanakan dengan ...</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Acara AFBI</h2>
+                    <p class="berita__detail">Kegiatan yang dilaksanakan dengan ...</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+
+                <div class="program__card">
+                    <img src="assets/img/gambar-berita.jpeg" class="cards__berita-img" alt="">
+
+                    <div class="detail__upload-berita">
+                        <h3 class="jenis__page-berita">Program</h3>
+                        <i class="ri-arrow-right-s-line"></i>
+                        <p class="tanggal__upload-berita">07 Maret 2022</p>
+                    </div>
+                    <h2 class="berita__title-desc">Acara AFBI</h2>
+                    <p class="berita__detail">Kegiatan yang dilaksanakan dengan ...</p>
+                    <a href="program.html" class="button__berita">Lihat Selengkapnya 
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="primary">
+                <a href="detail-berita.html" class="button button-primary">Lihat Selengkapnya</a>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section ">
+        <div class="footer__container container grid ">
+            <div class="footer__content ">
+                <a href="# " class="footer__logo ">
+                    <img src="assets/img/klogo2.png" alt="">
+                    <img src="assets/img/logobiu-removebg-preview.png" alt="">
+                </a>
+
+                <h3 class="footer__title ">
+                    Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                </h3>
+
+                <div class="footer__social ">
+                    <a href="https://www.facebook.com/ " class="footer__social-link ">
+                        <i class="ri-facebook-fill "></i>
+                    </a>
+                    <a href="https://www.instagram.com/ " class="footer__social-link ">
+                        <i class="ri-instagram-line "></i>
+                    </a>
+                    <a href="https://twitter.com/ " class="footer__social-link ">
+                        <i class="ri-twitter-fill "></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content ">
+                <h3 class="footer__title ">Divisi</h3>
+
+                <ul class="footer__data ">
+                    <a href="#">
+                        <li class="footer__information "> Kominfo</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Minat dan Bakat</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Social dan <br>Masyarakat </li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Penelitian dan PKM</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Pengembangan SDM</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer__content ">
+                <h3 class="footer__title ">BEM BIU</h3>
+
+                <ul class="footer__data ">
+                    <a href="#">
+                        <li class="footer__information ">Struktur</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Program</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Sejarah</li>
+                    </a>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Hubungi Kami
+                </h3>
+                <a href="#" class="button footer__button">Hubungi Kami</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="# " class="scrollup " id="scroll-up ">
+        <i class="ri-arrow-up-fill scrollup__icon "></i>
+    </a>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js "></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>

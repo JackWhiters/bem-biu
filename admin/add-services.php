@@ -91,10 +91,10 @@ echo "<script>alert('Updated Successfully');</script>
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add Services</h1>
+            <h1>Tambah Program</h1>
           </div>
            <div class="col-sm-6">
-          <a href="view-services.php" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i>  View Services</a>
+          <a href="view-services.php" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i>  Lihat Program</a>
           </div>
 
         </div>
@@ -111,20 +111,20 @@ echo "<script>alert('Updated Successfully');</script>
 			 
 			<div class="card-header">
              <div class="form-group">
-                  <label>Enter Title</label>
+                  <label>Masukkan Judul</label>
                  <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
             
             <div class="card-body pad">
-			<label>Short Description</label>
+			<label>Deskripsi Singkat</label>
               <div class="mb-3">
                 <textarea name="short" placeholder="Short Description" style="width: 100%;" rows="5" cols="23"><?php echo $roww["short"]; ?></textarea>
               </div>
             </div>
             	
 			<div class="card-body pad">
-			<label>Full Description</label>
+			<label>FDeskripsi Lengkap</label>
               <div class="mb-3">
                 <textarea name="descrip" class="textarea" placeholder="Place some text here"
                           style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?php echo $roww["descrip"]; ?></textarea>
@@ -132,7 +132,7 @@ echo "<script>alert('Updated Successfully');</script>
             </div>
 			<div class="card-header">
 			<div class="form-group">
-                    <label for="exampleInputFile">Select Img<span style="color:red;">(only compresed)</span></label>
+                    <label for="exampleInputFile">Pilih Gambar<span style="color:red;">(only compresed)</span></label>
 					<p style="color:red;">img size 800px x 500px</p>
                         <input name="lis_img" type="file" required>
                      <?php echo $roww["img"]; ?>
@@ -145,7 +145,7 @@ echo "<script>alert('Updated Successfully');</script>
                     <div class="col-sm-6">
                       <!-- text input -->
                       <div class="form-group">
-				<button type="submit" name="publise" class="btn btn-block btn-warning btn-lg">Post</button>
+				<button type="submit" name="publise" class="btn btn-block btn-warning btn-lg">POST</button>
                       </div>
                     </div>
                   </div>

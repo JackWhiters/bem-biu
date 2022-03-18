@@ -7,12 +7,12 @@
     $id = $_GET['id'];
 
     //fetch blogs 
-    $blog = mysqli_query($con,"SELECT * FROM blog WHERE id=$id");
+    $blog = mysqli_query($con,"SELECT * FROM services WHERE id=$id");
     $fetch = mysqli_fetch_array($blog);
 
 
     //fetch recent post
-    $recent = mysqli_query($con,"SELECT * FROM blog LIMIT 4");
+    $recent = mysqli_query($con,"SELECT * FROM services LIMIT 4");
 
       //fetch category
 
@@ -44,10 +44,8 @@
 <link href="assets/css/color.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Yantramanav:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
-
+    <link rel="shortcut icon" href="assets/img/logo-kabinet.png" type="image/x-icon">
+    
   <script>
         $(document).ready(function() {
             $(".program__card").hide();
@@ -78,51 +76,7 @@
 <div class="page-wrapper">
  
     <!-- Main Header -->
-    <!--==================== HEADER ====================-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <img src="assets/img/klogo2.png" class="nav__logo" alt="">
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.php" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="tentang-kami.php" class="nav__link">Tentang Kami</a>
-                        <i class="ri-arrow-down-s-line" style="color: white;"></i>
-                        <ul class="dropdown__nav">
-                            <li><a href="tentang-kami.php" class="dropdown__link">Tentang BEM</a></li>
-                            <li><a href="visi-misi.php" class="dropdown__link">Visi-Misi</a></li>
-                            <li><a href="sejarah.php" class="dropdown__link">Sejarah</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <a href="detail-berita.php" class="nav__link">Berita & Program</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="struktur-divisi.php" class="nav__link">Struktur & Divisi</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>
-                    </li>
-                </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-
-            <div class="nav__btns">
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
+<?php include "header.php"; ?>
 
     <main class="main">
 
@@ -130,7 +84,7 @@
             <div class="detail-berita__container container grid">
                 <div class="detail__data">
                     <h2 class="detail__title"><?php echo $fetch['title']; ?></h2>
-                <img src="admin/images/blog/<?php echo $fetch['img']; ?>" style="min-height:600px;min-width:600px;max-height:600px;max-width:600px" alt="" class="card__detail-img">
+                <img src="admin/images/services/<?php echo $fetch['img']; ?>" style="min-height:600px;min-width:600px;max-height:600px;max-width:600px" alt="" class="card__detail-img">
 
                 </div>
             </div>

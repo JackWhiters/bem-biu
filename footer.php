@@ -5,9 +5,82 @@
     $settings = mysqli_query($con,"SELECT * FROM settings");
     $setting  = mysqli_fetch_array($settings);
 ?>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section ">
+        <div class="footer__container container grid ">
+            <div class="footer__content ">
+                <a href="# " class="footer__logo ">
+                    <img src="assets/img/klogo2.png" alt="">
+                    <img src="assets/img/logobiu-removebg-preview.png" alt="">
+                </a>
 
+                <h3 class="footer__title ">
+                    Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                </h3>
+
+                <div class="footer__social ">
+                    <a href="https://www.facebook.com/ " class="footer__social-link ">
+                        <i class="ri-facebook-fill "></i>
+                    </a>
+                    <a href="https://www.instagram.com/ " class="footer__social-link ">
+                        <i class="ri-instagram-line "></i>
+                    </a>
+                    <a href="https://twitter.com/ " class="footer__social-link ">
+                        <i class="ri-twitter-fill "></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content ">
+                <h3 class="footer__title ">Divisi</h3>
+
+                <ul class="footer__data ">
+                    <a href="#">
+                        <li class="footer__information "> Kominfo</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Minat dan Bakat</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Social dan <br>Masyarakat </li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Penelitian dan PKM</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Pengembangan SDM</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer__content ">
+                <h3 class="footer__title ">BEM BIU</h3>
+
+                <ul class="footer__data ">
+                    <a href="#">
+                        <li class="footer__information ">Struktur</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Program</li>
+                    </a>
+                    <a href="#">
+                        <li class="footer__information ">Sejarah</li>
+                    </a>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Hubungi Kami
+                </h3>
+                <a href="#" class="button footer__button">Hubungi Kami</a>
+            </div>
+        </div>
+
+    </footer>
     <!-- Newsletter -->
-    <section class="newsletter-section style-two">
+    <!-- <section class="newsletter-section style-two">
         <div class="auto-container">
             <div class="row">
                 <div class="col-lg-5">
@@ -29,7 +102,7 @@
         </div>        
     </section>
 <!--Main Footer-->
-    <footer class="main-footer">
+    <!-- <footer class="main-footer">
         <div class="upper-box">
             <div class="auto-container">
                 <div class="row">
@@ -121,10 +194,10 @@
                 </div>
             </div> 
         </div>               
-    </footer>
+    </footer> --> -->
     <!--End Main Footer-->
 
-    <div class="footer-bottom">
+    <!-- <div class="footer-bottom">
         <div class="auto-container">
             <div class="row m-0 align-items-center justify-content-between">
                 <div class="copyright-text">Copyright © 2021 <?php echo $setting['site_name']; ?> | Designed By <a target="blank" href="https://www.actwebspace.com"> ACT Web Space</a></div>
@@ -137,5 +210,5 @@
         </div>
     </div>
 	
-</div>
+</div> -->
 <!--End pagewrapper-->

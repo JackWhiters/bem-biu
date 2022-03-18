@@ -117,7 +117,7 @@ function compressImage($source, $destination, $quality) {
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add blog</h1>
+            <h1>Tambah Berita</h1>
           </div>
 
         </div>
@@ -132,13 +132,13 @@ function compressImage($source, $destination, $quality) {
           <div class="card card-outline card-info">
 			<div class="card-header">
              <div class="form-group">
-                  <label>Enter Title</label>
+                  <label>Masukkan Judul</label>
                  <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
             	<div class="card-header">
              <div class="form-group">
-                  <label>Select Category</label>
+                  <label>Pilih Kategori</label>
                   <select name="category" class="form-control">
                       <option>Select...</option>
                       <?php 
@@ -154,7 +154,7 @@ function compressImage($source, $destination, $quality) {
             </div>
 			
 			<div class="card-body pad">
-			<label>Enter Description</label>
+			<label>Masukkan Deskripsi</label>
               <div class="mb-3">
                 <textarea name="descrip" class="textarea" placeholder="Place some text here"
                           style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"><?php echo $roww["descrip"]; ?></textarea>
@@ -162,7 +162,7 @@ function compressImage($source, $destination, $quality) {
             </div>
 			<div class="card-header">
 			<div class="form-group">
-                    <label for="exampleInputFile">Select Img<span style="color:red;">(only compresed)</span></label>
+                    <label for="exampleInputFile">Pilih Gambar<span style="color:red;">(only compresed)</span></label>
 					<p style="color:red;">img size 800px x 800px</p>
                         <input name="lis_img" type="file" required>
                      <?php echo $roww["img"]; ?>

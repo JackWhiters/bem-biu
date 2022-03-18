@@ -77,7 +77,7 @@ $a=6;
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Add New Category</h1>
+            <h1>Tambah Kategori</h1>
           </div>
 
         </div>
@@ -94,7 +94,7 @@ $a=6;
 			
 			<div class="card-header">
              <div class="form-group">
-                  <label>Enter Category Name</label>
+                  <label>Nama Kategori</label>
                  <input type="text" name="cat_name" value="<?php echo $roww["cat_name"]; ?>" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
@@ -108,7 +108,7 @@ $a=6;
           <div class="card card-outline card-info">
             <div class="card-header">
              <div class="form-group">
-                  <label>All Category</label>
+                  <label>Semua Kategori</label>
                  
                 </div>
             </div>
@@ -117,7 +117,7 @@ $a=6;
              <table class="table">
                 <thead>
                   <tr>
-                    <th>Name</th>
+                    <th>Nama</th>
                     <th></th>
                   </tr>
                 </thead>

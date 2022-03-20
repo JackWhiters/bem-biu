@@ -35,11 +35,8 @@
 <title><?php echo $setting['site_name']; ?> - <?php echo $fetch['title']; ?></title>
 <meta name="description" content="We Offer Import & Export assistance foreign businesses in transporting and selling their products in China, India and USA. We connect domestic companies to the international shipping services most suited for their business.">
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
 <link href="assets/css/stylesss3.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
 <!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
 <!-- Color File -->
 <link href="assets/css/color.css" rel="stylesheet">
 

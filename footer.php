@@ -194,7 +194,7 @@
                 </div>
             </div> 
         </div>               
-    </footer> --> -->
+    </footer>
     <!--End Main Footer-->
 
     <!-- <div class="footer-bottom">

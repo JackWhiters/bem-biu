@@ -44,7 +44,7 @@
                         <a href="struktur-divisi.html" class="nav__link">Struktur & Divisi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="ukm.html" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">ukm</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>

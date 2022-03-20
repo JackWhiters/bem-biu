@@ -35,13 +35,17 @@
 <title><?php echo $setting['site_name']; ?> - <?php echo $fetch['title']; ?></title>
 <meta name="description" content="We Offer Import & Export assistance foreign businesses in transporting and selling their products in China, India and USA. We connect domestic companies to the international shipping services most suited for their business.">
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/stylesss3.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
-<!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
-<!-- Color File -->
-<link href="assets/css/color.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo-kabinet.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styless3.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Yantramanav:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
@@ -70,7 +74,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=601e75803d01430011c105c8&product=image-share-buttons" async="async"></script>
 </head>
 
 <body>
@@ -79,13 +82,13 @@
  
     <!-- Main Header -->
     <!--==================== HEADER ====================-->
-    <header class="header" id="header">
+        <header class="header" id="header">
         <nav class="nav container">
             <img src="assets/img/klogo2.png" class="nav__logo" alt="">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.php" class="nav__link">Home</a>
+                        <a href="index.php" class="nav__link active-link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="tentang-kami.php" class="nav__link">Tentang Kami</a>
@@ -102,8 +105,9 @@
                     <li class="nav__item">
                         <a href="struktur-divisi.php" class="nav__link">Struktur & Divisi</a>
                     </li>
+                    
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>
@@ -123,8 +127,6 @@
             </div>
         </nav>
     </header>
-
-    <main class="main">
 
         <section class="detail-berita section">
             <div class="detail-berita__container container grid">

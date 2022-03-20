@@ -46,7 +46,7 @@
                     </li>
                     
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>

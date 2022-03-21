@@ -35,19 +35,22 @@
                 <h3 class="footer__title ">Divisi</h3>
 
                 <ul class="footer__data ">
-                    <a href="#">
+                    <a href="divisi/divisi-keilmuan.php">
+                        <li class="footer__information "> Keilmuan</li>
+                    </a>
+                    <a href="divisi/divisi-kominfo.php">
                         <li class="footer__information "> Kominfo</li>
                     </a>
-                    <a href="#">
+                    <a href="divisi/divisi-minbak.php">
                         <li class="footer__information ">Minat dan Bakat</li>
                     </a>
-                    <a href="#">
-                        <li class="footer__information ">Social dan <br>Masyarakat </li>
+                    <a href="divisi/divisi-sosmas.php">
+                        <li class="footer__information ">Social dan Masyarakat </li>
                     </a>
-                    <a href="#">
+                    <a href="divisi/divisi-pkm.php">
                         <li class="footer__information ">Penelitian dan PKM</li>
                     </a>
-                    <a href="#">
+                    <a href="divisi/divisi-sdm.php">
                         <li class="footer__information ">Pengembangan SDM</li>
                     </a>
                 </ul>
@@ -57,13 +60,13 @@
                 <h3 class="footer__title ">BEM BIU</h3>
 
                 <ul class="footer__data ">
-                    <a href="#">
+                    <a href="struktur-divisi.php">
                         <li class="footer__information ">Struktur</li>
                     </a>
-                    <a href="#">
+                    <a href="detail-program.php">
                         <li class="footer__information ">Program</li>
                     </a>
-                    <a href="#">
+                    <a href="sejarah.php">
                         <li class="footer__information ">Sejarah</li>
                     </a>
                     </a>
@@ -74,7 +77,7 @@
                 <h3 class="footer__title">
                     Hubungi Kami
                 </h3>
-                <a href="#" class="button footer__button">Hubungi Kami</a>
+                <a href="contact.php" class="button footer__button">Hubungi Kami</a>
             </div>
         </div>
 

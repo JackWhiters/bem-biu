@@ -56,6 +56,61 @@ order by id limit 3 ");
 
 <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=601e75803d01430011c105c8&product=image-share-buttons' async='async'></script> -->
 
+<style>
+     @media only screen and (max-width: 600px) {
+         .video__title{
+             width:520px;
+         }
+         .video__title {
+             width:520px;
+         }
+         .video__desc {
+             width:520px;
+         }
+         .video__content
+         {
+              width:520px;
+         }
+         .video_bem {
+             width:520px;
+         }
+     }
+
+         @media only screen and (max-width: 500px) {
+         .video__title{
+             width:350px;
+         }
+         .video__title {
+             width:350px;
+         }
+         .video__desc {
+             width:350px;
+         }
+         .video__content
+         {
+              width:350px;
+         }
+         .video_bem {
+             width:350px;
+         }
+     }
+
+              @media only screen and (max-width: 400px) {
+         .video__title{
+             width:350px;
+         }
+         .video__desc {
+             width:350px;
+         }
+         .video__content
+         {
+              width:350px;
+         }
+         .video_bem {
+             width:340px;
+         }
+     }
+</style>
 </head>
 
 <body>
@@ -93,7 +148,7 @@ order by id limit 3 ");
                         <a href="#video" class="button button--ghost">
                             Selengkapnya >
                         </a>
-                        <a href="#about" class="button button--flex">
+                        <a href="https://binainsani.ac.id/"  target="_blank" class="button button--flex">
                             Bina Insani University >
                         </a>
                     </div>
@@ -110,13 +165,7 @@ order by id limit 3 ");
                 <h2 class="video__title">BEM Universitas Bina Insani</h2>
                 <p class="video__desc">Pengenalan Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
                 <div class="video__content">
-                    <video id="video-file">
-                        <source src="assets/video/video.mp4" type="video/mp4">
-                    </video>
-
-                    <button class="button button--flex video__button" id="video-button">
-                        <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                    </button>
+                    <iframe width="660" height="371" class="video_bem" src="https://www.youtube.com/embed/fuadn7oMYGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>
@@ -124,12 +173,14 @@ order by id limit 3 ");
         <section class="berita section container" id="berita">
             <h2 class="berita__title">Berita Mengenai BEM BIU</h2>
             <p class="berita__desc">Berita terkini kegiatan maupun kegiatan program kerja yang dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
-             <?php
+            
+            <?php
                         while($row=mysqli_fetch_array($berita))
                         {
                     ?>
+             
             <div class="berita__container grid">
-                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img">
+                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img ">
                 <div class="berita__data-terbaru">
                     <div class="detail__upload-berita">
                         <h3 class="jenis__page-berita">Berita</h3>
@@ -148,27 +199,27 @@ order by id limit 3 ");
                         ?>
 
              <div class="berita-lawas__container grid">
-                                     <?php
+                <?php
                         while($row=mysqli_fetch_array($berita_main))
                         {
                     ?>
-                <div class="berita__card">
-                    <img src="admin/images/blog/<?php echo $row['img']; ?>" style="height:300px;width:300px;" class="cards__berita-img" alt="">
+                        <div class="berita__card">
+                            <img src="admin/images/blog/<?php echo $row['img']; ?>" class="cards__berita-img" alt="">
 
-                    <div class="detail__upload-berita">
-                        <h3 class="jenis__page-berita">Berita</h3>
-                        <i class="ri-arrow-right-s-line"></i>
-                        <p class="tanggal__upload-berita">20 JAN 2022</p>
-                    </div>
-                    <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
-                    <p class="berita__detail"><?php echo $row['descrip']; ?></p>
-                    <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
-                        <i class="ri-arrow-right-s-line"></i>
-                    </a>
-                </div>
-                                <?php
+                            <div class="detail__upload-berita">
+                                <h3 class="jenis__page-berita">Berita</h3>
+                                <i class="ri-arrow-right-s-line"></i>
+                                <p class="tanggal__upload-berita">20 JAN 2022</p>
+                            </div>
+                            <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
+                            <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                            <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+                    <?php
                         }
-                ?>
+                    ?>
             </div>
 
 
@@ -179,12 +230,15 @@ order by id limit 3 ");
                 <h2 class="program__title">Program yang sudah terlaksana</h2>
                 <p class="program__desc">Program kerja yang telah dilakukan oleh Badan Eksekutif Mahasiswa Universitas Bina Insani dan divisi-divisinya.</p>
                 <div class="program__container grid">
-                                                 <?php
+                    
+                <?php
                         while($row=mysqli_fetch_array($program))
                         {
                     ?>
                     <div class="program__card">
-                        <img src="admin/images/services/<?php echo $row['img']; ?>" style="height:300px;width:300px;"  class="cards__berita-img" alt="">
+                        
+                    
+                        <img src="admin/images/services/<?php echo $row['img']; ?>"class="cards__berita-img">
 
                         <div class="detail__upload-berita">
                             <h3 class="jenis__page-berita">Program</h3>
@@ -196,10 +250,14 @@ order by id limit 3 ");
                         <a href="program.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
                             <i class="ri-arrow-right-s-line"></i>
                         </a>
+                        
                     </div>
                     <?php
                         }
                     ?>
+                    
+                </div>
+                
     </section>
 
 

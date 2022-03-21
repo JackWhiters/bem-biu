@@ -405,17 +405,10 @@
 
     .video__content {
     position: relative;
+    justify-self: center;
     }
-
-    .video__button {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    padding: 1rem 1.5rem;
-    }
-
-    .video__button-icon {
-    font-size: 1.5rem;
+    .video_bem {
+        align-items: center;
     }
     /*=============== BERITA ===============*/
 
@@ -465,7 +458,8 @@
 
     .cards__berita-img {
     border-radius: 16px;
-    width: 100%;
+    width: auto;
+    height: auto;
     margin-bottom: var(--mb-0-75);
     }
 
@@ -635,7 +629,7 @@
 
     .detail__title {
     font-size: var(--h1-font-size);
-    margin-bottom: var(--mb-1);
+    margin-bottom: var(--mb-2-5);
     text-align: center;
     color: #fff;
     }
@@ -644,10 +638,12 @@
     position: relative;
     justify-self: center;
     padding: .75rem 1.2rem;
-    width: 5000px;
+    width: 100%;
+    height: auto;
     border-radius: 25px;
     }
 
+    
     .card__detail-img {
     position: relative;
     justify-self: center;

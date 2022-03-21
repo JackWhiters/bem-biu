@@ -52,6 +52,7 @@ $short = str_replace("'","\'", $short1);
 $descrip1 = $_POST['descrip'];
 $descrip = str_replace("'","\'", $descrip1);
 $url = $_POST['url'];
+$category = $_POST['category'];
 
 if($_FILES['lis_img']['name']!=''){
 $lis_img = rand().$_FILES['lis_img']['name'];
@@ -67,14 +68,14 @@ if($edit==''){
 
 move_uploaded_file($tempname, $folder);
 
-$insertdata = mysqli_query($con,"INSERT INTO services(title,short,descrip,img,date,status)VALUES('$title','$short','$descrip','$lis_img','$today','0')");
+$insertdata = mysqli_query($con,"INSERT INTO services(title,short,category,descrip,img,date,status)VALUES('$title','$short','$category','$descrip','$lis_img','$today','0')");
 echo "<script>alert('Posted Successfully');</script>
 	<script>window.location.href = 'add-services.php'</script>";
 }
 else{
 move_uploaded_file($tempname, $folder);
 
-$insertdata = mysqli_query($con,"UPDATE services SET title='$title',short='$short',descrip='$descrip',img='$lis_img',date='$today' where id=".$edit."");
+$insertdata = mysqli_query($con,"UPDATE services SET title='$title',short='$short',category='$category',descrip='$descrip',img='$lis_img',date='$today' where id=".$edit."");
 echo "<script>alert('Updated Successfully');</script>
 	<script>window.location.href = 'add-services.php'</script>";
 }
@@ -113,6 +114,22 @@ echo "<script>alert('Updated Successfully');</script>
              <div class="form-group">
                   <label>Masukkan Judul</label>
                  <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
+                </div>
+            </div>
+                        	<div class="card-header">
+             <div class="form-group">
+                  <label>Pilih Divisi</label>
+                  <select name="category" class="form-control">
+                      <option>Select...</option>
+                      <?php 
+                      $location = mysqli_query($con,"SELECT * FROM category"); 
+                      while ($location_ft = mysqli_fetch_array($location)) {   
+                      ?>
+                      <option <?php if($roww["category"]==$location_ft["cat_name"]){ echo 'selected'; } ?> value="<?php echo $location_ft["cat_name"]; ?>"><?php echo $location_ft["cat_name"]; ?></option>
+                      <?php
+                		}
+                	   ?>
+                  </select>
                 </div>
             </div>
             

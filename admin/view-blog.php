@@ -100,7 +100,7 @@ $serial = ($page-1) * $limit;
                   <tr>
                     <th>Img</th>
                     <th>Title</th>
-                    <th>Category</th>
+                    <!-- <th>Category</th> -->
 					<th>Description</th>
                     
                     <th></th>

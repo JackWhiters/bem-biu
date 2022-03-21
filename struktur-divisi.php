@@ -47,7 +47,7 @@
                         <a href="struktur-divisi.php" class="nav__link  active-link">Struktur & Divisi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>
@@ -75,7 +75,7 @@
 
         <section class="swiper__section section " id="berita">
             <div class="swiper__title">
-                <h2 class="struktur__title">Jajaran Pengurus & Divisi Pada BEM Bina Insani University 2021/2022</h2>
+                <h2 class="struktur__title">Jajaran Pengurus & Divisi Pada BEM <br> Bina Insani University 2021/2022</h2>
                 <p class="struktur__desc">Jajaran Pengurus Inti</p>
             </div>
             <div class="swiper mySwiper swiper__container container grid">
@@ -83,7 +83,7 @@
                     <div class="swiper-slide swiper-card">
                         <div class="swiper__card-content">
                             <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
+                                <img src="admin/images/team/aldis.jpeg" class="swiper-image-img" alt="">
                             </div>
                             <h2 class="nama__profesi">Muhammad Aldisyah Rahman</h2>
                             <p class="desc__profesi">Ketua BEM</p>
@@ -93,7 +93,7 @@
                     <div class="swiper-slide swiper-card">
                         <div class="swiper__card-content">
                             <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
+                                <img src="admin/images/team/raden.jpeg" class="swiper-image-img" alt="">
                             </div>
                             <h2 class="nama__profesi">Raden Fitria Dwiyani Putri</h2>
                             <p class="desc__profesi">Wakil Ketua Bem</p>
@@ -102,7 +102,7 @@
                     <div class="swiper-slide swiper-card">
                         <div class="swiper__card-content">
                             <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
+                                <img src="admin/images/team/nada.jpeg" class="swiper-image-img" alt="">
                             </div>
                             <h2 class="nama__profesi">Nada Aura</h2>
                             <p class="desc__profesi">Sekertaris 1</p>
@@ -112,29 +112,10 @@
                     <div class="swiper-slide swiper-card">
                         <div class="swiper__card-content">
                             <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
+                                <img src="admin/images/team/siti.png" class="swiper-image-img" alt="">
                             </div>
-                            <h2 class="nama__profesi">Pemira 2022</h2>
-                            <p class="desc__profesi">Kegiatan Pemira</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide swiper-card">
-                        <div class="swiper__card-content">
-                            <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
-                            </div>
-                            <h2 class="nama__profesi">Pemira 2022</h2>
-                            <p class="desc__profesi">Kegiatan Pemira</p>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-card">
-                        <div class="swiper__card-content">
-                            <div class="swiper-image">
-                                <img src="assets/img/pp.jpg" class="swiper-image-img" alt="">
-                            </div>
-                            <h2 class="nama__profesi">Pemira 2022</h2>
-                            <p class="desc__profesi">Kegiatan Pemira</p>
+                            <h2 class="nama__profesi">Siti Rahmah Nur Effendi</h2>
+                            <p class="desc__profesi">Bendahara 2</p>
                         </div>
                     </div>
                     
@@ -152,13 +133,27 @@
                 <div class="program__card">
                     <div class="detail__divisi">
                         <p class="divisi__card-title">DIVISI</p>
-                        <h2 class="divisi__card-desc">Divisi Komunikasi dan Informasi</h2>
+                        <h2 class="divisi__card-desc">Divisi Keilmuan</h2>
                     </div>
                     <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <a href="divisi/divisi-keilmuan.php" class="button__program">Baca Selengkapnya
+                        <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="program__card">
+                    <div class="detail__divisi">
+                        <p class="divisi__card-title">DIVISI</p>
+                        <h2 class="divisi__card-desc">Divisi Komunikasi dan Informasi</h2>
+                    </div>
+                    <img src="admin/images/divisi/kominfo.png" class="cards__program-img" alt="">
+
+                    <div class="detail__divisi-card">
+                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
+                        <a href="divisi/divisi-kominfo.php" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
@@ -167,13 +162,30 @@
                 <div class="program__card">
                     <div class="detail__divisi">
                         <p class="divisi__card-title">DIVISI</p>
-                        <h2 class="divisi__card-desc">Divisi Komunikasi dan Informasi</h2>
+                        <h2 class="divisi__card-desc">Divisi Minat Dan Bakat</h2>
+                    </div>
+                    <img src="admin/images/divisi/minat_bakat.png" class="cards__program-img" alt="">
+
+                    <div class="detail__divisi-card">
+                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
+                        <a href="divisi/divisi-minbak.php" class="button__program">Baca Selengkapnya
+                        <i class="ri-arrow-right-s-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+     
+                
+                <div class="program__card">
+                    <div class="detail__divisi">
+                        <p class="divisi__card-title">DIVISI</p>
+                        <h2 class="divisi__card-desc">Divisi Sosial Masyarakat</h2>
                     </div>
                     <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <a href="divisi/divisi-sosmas.php" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
@@ -182,13 +194,13 @@
                 <div class="program__card">
                     <div class="detail__divisi">
                         <p class="divisi__card-title">DIVISI</p>
-                        <h2 class="divisi__card-desc">Divisi Komunikasi dan Informasi</h2>
+                        <h2 class="divisi__card-desc">Divisi PKM dan Penelitian</h2>
                     </div>
                     <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <a href="divisi/divisi-pkm.php" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
@@ -197,13 +209,13 @@
                 <div class="program__card">
                     <div class="detail__divisi">
                         <p class="divisi__card-title">DIVISI</p>
-                        <h2 class="divisi__card-desc">Divisi Komunikasi dan Informasi</h2>
+                        <h2 class="divisi__card-desc">Divisi Sumber Daya Manusia</h2>
                     </div>
                     <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <a href="divisi/divisi-sdm.php" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
@@ -213,79 +225,7 @@
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer section ">
-        <div class="footer__container container grid ">
-            <div class="footer__content ">
-                <a href="# " class="footer__logo ">
-                    <img src="assets/img/klogo2.png" alt="">
-                    <img src="assets/img/logobiu-removebg-preview.png" alt="">
-                </a>
-
-                <h3 class="footer__title ">
-                    Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
-                </h3>
-
-                <div class="footer__social ">
-                    <a href="https://www.facebook.com/ " class="footer__social-link ">
-                        <i class="ri-facebook-fill "></i>
-                    </a>
-                    <a href="https://www.instagram.com/ " class="footer__social-link ">
-                        <i class="ri-instagram-line "></i>
-                    </a>
-                    <a href="https://twitter.com/ " class="footer__social-link ">
-                        <i class="ri-twitter-fill "></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer__content ">
-                <h3 class="footer__title ">Divisi</h3>
-
-                <ul class="footer__data ">
-                    <a href="#">
-                        <li class="footer__information "> Kominfo</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Minat dan Bakat</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Social dan <br>Masyarakat </li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Penelitian dan PKM</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Pengembangan SDM</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="footer__content ">
-                <h3 class="footer__title ">BEM BIU</h3>
-
-                <ul class="footer__data ">
-                    <a href="#">
-                        <li class="footer__information ">Struktur</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Program</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Sejarah</li>
-                    </a>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Hubungi Kami
-                </h3>
-                <a href="#" class="button footer__button">Hubungi Kami</a>
-            </div>
-        </div>
-
-    </footer>
+    <?php include "footer.php" ?>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

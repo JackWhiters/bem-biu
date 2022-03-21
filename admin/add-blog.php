@@ -136,7 +136,7 @@ function compressImage($source, $destination, $quality) {
                  <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
-            	<div class="card-header">
+            	<!-- <div class="card-header">
              <div class="form-group">
                   <label>Pilih Kategori</label>
                   <select name="category" class="form-control">
@@ -151,7 +151,7 @@ function compressImage($source, $destination, $quality) {
                 	   ?>
                   </select>
                 </div>
-            </div>
+            </div> -->
 			
 			<div class="card-body pad">
 			<label>Masukkan Deskripsi</label>

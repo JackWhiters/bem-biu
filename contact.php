@@ -69,7 +69,7 @@
                         <a href="struktur-divisi.php" class="nav__link ">Struktur & Divisi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost active-link">Hubungi Kami</a>
@@ -119,20 +119,6 @@
                     </div>                            
                 </div>
                 <!-- Contact Widget -->
-                <div class="contact-widget">
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-cursor"></span></div>
-                        <div class="text">Boat House, 152/21 City Road, <br> Hoxton, N1 6NG, UK.</div>
-                    </div>
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-calling"></span></div>
-                        <div class="text"><strong>Phone</strong><a href="tel:(+61)3245689790"><?php $setting['map']; ?></a></div>
-                    </div>
-                    <div class="icon-box">
-                        <div class="icon"><span class="flaticon-mail"></span></div>
-                        <div class="text"><strong>Email</strong><a href="tel:(+61)32456789790">supportyou@transida.com</a></div>
-                    </div>
-                </div>
                 <!-- Link Btn -->
                 <div class="link-btn"><a href="#" class="theme-btn btn-style-one style-two"><span><i class="flaticon-up-arrow"></i>Purchase Our Theme </span></a></div>
             </div>
@@ -203,25 +189,17 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="icon-box">
-                                            <div class="icon"><span class="flaticon-mail"></span></div>
-                                            <div class="text-area">
-                                                <div class="text"><strong>Mon - Friday</strong>08.00 am to 9.00pm</div>
-                                                
-                                            </div>                                    
-                                        </div>
                                     </div>
                                 </div>
                             </div>                            
                         </div>
                         <div class="col-lg-6">
                             <div class="sec-title">
-                                <div class="sub-title">Get a Quote</div>
-                                <h2>Start Your Shipping</h2>
+                                <h2>HUBUNGI KAMI</h2>
                             </div>
                             <!--<div class="text">Indignation and dislike men who are so beguiled & demoralized by <br> the charms of pleasure of the moment.</div>
                             <div class="link">-->
-                                <a href="#cform" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>Get A Quote</span></a>
+                                <a href="#cform" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>AYO BERSUARA</span></a>
                             </div>
                         </div>
                     </div>
@@ -238,31 +216,30 @@
     <section class="contact-form-section" id="cform">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <div class="sub-title">Drop a line</div>
-                <h2>We’re Always Here for You</h2>
-                <div class="text">Please do not hesitate to contact us if you require further information about our logisitc service.</div>
+                <h2>SUARA MAHASISWA</h2>
+                <div class="text">Masukkan Nama Dan Email Yang Valid.</div>
             </div>
             <!--Contact Form-->
             <div class="contact-form">
                 <form method="post" action="send-mail.php" id="contact-form">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <input type="text" name="name" value="" placeholder="Your Name" required>
+                            <input type="text" name="name" value="" placeholder="Nama" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <input type="text" name="phone" value="" placeholder="Phone Number" required>
+                            <input type="text" name="phone" value="" placeholder="Nomor Telephone" required>
                         </div>                        
                         <div class="form-group col-md-12">
-                            <input type="text" name="email" value="" placeholder="Your Email" required>
+                            <input type="text" name="email" value="" placeholder="Email" required>
                         </div>                        
                                               
                                               
                         <div class="form-group col-md-12">
-                            <textarea name="message" placeholder="Message"></textarea>
+                            <textarea name="message" placeholder="PESAN"></textarea>
                         </div>                        
                         <div class="form-group text-center col-md-12">
                             <input id="form_botcheck" name="form_botcheck" class="form-control" type="hidden" value="">
-                            <button class="theme-btn btn-style-one" type="submit" data-loading-text="Please wait..." name="submit"><span><i class="flaticon-up-arrow"></i>Send Message</span></button>
+                            <button class="theme-btn btn-style-one" type="submit" data-loading-text="Please wait..." name="submit"><span><i class="flaticon-up-arrow"></i>KIRIM</span></button>
                         </div>
                     </div>
                 </form>

@@ -81,14 +81,14 @@
         <div class="program__container grid">
             <div class="program__card">
                 <div class="detail__divisi">
-                    <p class="ukm__card-title">DIVISI</p>
-                    <h2 class="ukm__card-desc">Divisi Komunikasi dan Informasi</h2>
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Computer Club</h2>
                 </div>
                 <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
-                    <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                    <a href="#" class="button__program">Baca Selengkapnya
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Computer atau Komputer.</h2>
+                    <a href="ukm/ukm-cc.php" class="button__program">Baca Selengkapnya
                     <i class="ri-arrow-right-s-line"></i>
                     </a>
                 </div>
@@ -96,14 +96,14 @@
             
             <div class="program__card">
                 <div class="detail__divisi">
-                    <p class="ukm__card-title">DIVISI</p>
-                    <h2 class="ukm__card-desc">Divisi Komunikasi dan Informasi</h2>
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Bulu Tangkis</h2>
                 </div>
                 <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
-                    <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                    <a href="#" class="button__program">Baca Selengkapnya
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Olahraga Bulutangkis.</h2>
+                    <a href="ukm/ukm-bultang.php" class="button__program">Baca Selengkapnya
                     <i class="ri-arrow-right-s-line"></i>
                     </a>
                 </div>
@@ -111,14 +111,14 @@
             
             <div class="program__card">
                 <div class="detail__divisi">
-                    <p class="ukm__card-title">DIVISI</p>
-                    <h2 class="ukm__card-desc">Divisi Komunikasi dan Informasi</h2>
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Language Club</h2>
                 </div>
                 <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
-                    <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                    <a href="#" class="button__program">Baca Selengkapnya
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Language atau Bahasa .</h2>
+                    <a href="ukm/ukm-lc.php" class="button__program">Baca Selengkapnya
                     <i class="ri-arrow-right-s-line"></i>
                     </a>
                 </div>
@@ -126,14 +126,98 @@
             
             <div class="program__card">
                 <div class="detail__divisi">
-                    <p class="ukm__card-title">DIVISI</p>
-                    <h2 class="ukm__card-desc">Divisi Komunikasi dan Informasi</h2>
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Lembaga Dakwah Kampus</h2>
                 </div>
                 <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
-                    <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                    <a href="#" class="button__program">Baca Selengkapnya
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Kegiatan Agama Islam.</h2>
+                    <a href="ukm/ukm-ldk.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Paraswara</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan kegiatan seperti Paduan Suara.</h2>
+                    <a href="ukm/ukm-paraswara.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Seni Tari</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Tari atau Kegiatan seperti Menari.</h2>
+                    <a href="ukm/ukm-seni-tari.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Bina Insani Pencita Alam</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Alam.</h2>
+                    <a href="ukm/ukm-pd.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Futsal</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Olahraga Futsal.</h2>
+                    <a href="ukm/ukm-futsal.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Accounting Club</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Accounting atau Akuntans</h2>
+                    <a href="uk,/ukm-accounting.php" class="button__program">Baca Selengkapnya
+                    <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="program__card">
+                <div class="detail__divisi">
+                    <p class="ukm__card-title">UKM</p>
+                    <h2 class="ukm__card-desc">Personal Development</h2>
+                </div>
+                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+
+                <div class="detail__divisi-card">
+                    <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Pengembangan diri seperti Soft Skill.</h2>
+                    <a href="detail-ukm.php" class="button__program">Baca Selengkapnya
                     <i class="ri-arrow-right-s-line"></i>
                     </a>
                 </div>

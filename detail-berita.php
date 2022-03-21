@@ -61,11 +61,12 @@ order by id limit 3 ");
         });
     </script>
 
-    <style>
+      <style>
         .bottom-left {
-            position: absolute;
+            position: relative;
                 bottom: 150px;
-            left: 30px;
+            text-align:left;
+            left:30px;
             /* text-shadow:0 0 1px black; */
              -webkit-text-stroke: 1px black;
             font-size:35px;
@@ -76,11 +77,15 @@ order by id limit 3 ");
             font-weight:900;
             }
         .bottom-left2 {
-            position:absolute;
-            bottom: 50px;
+            position:relative;
+            text-align:left;
+            bottom: 150px;
             left:30px;
-            shadow-radius: 5px;
+            text-border-radius:5px;
+            border-color:white;
+            text-shadow:2px 2px 2px white;
             font-size:20px;
+            color:black;
             text-align:left;
         }
         .gambar {
@@ -89,9 +94,51 @@ order by id limit 3 ");
 
             max-height:600px;
             max-width:1000px;
-
-
         }
+
+          @media only screen and (max-width: 600px)
+          {
+              .bottom-left {
+                  position:relative;
+                  font-size:14px;
+                  top:5px;
+                  left:20px;
+                  
+              }
+              .bottom-left2 {
+                  position:relative;
+                  font-size:14px;
+                  left:20px;
+                  top:8px;
+              }
+
+              .detail-berita {
+                  height:700px;
+              }
+
+              .detail__title {
+                  font-size:35px;
+              }
+              .detail-img {
+                  top:100px;
+                  padding:0;
+              }
+          }
+           @media only screen and (max-width: 500px) {
+            .bottom-left {
+                  position:relative;
+                  font-size:12px;
+                  top:5px;
+                  left:20px;
+                  
+              }
+              .bottom-left2 {
+                  position:relative;
+                  font-size:12px;
+                  left:20px;
+                  top:8px;
+              }
+           }
     </style>
 
 
@@ -124,7 +171,7 @@ order by id limit 3 ");
                         <a href="struktur-divisi.php" class="nav__link">Struktur & Divisi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>
@@ -154,10 +201,10 @@ order by id limit 3 ");
                         {
                     ?>
                 <div class="detail__data" style="position:relative;">
-                    <h2 class="detail__title">Berita & Program yang akan dan sudah dilaksanakan BEM BIU </h2>
-                    <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="detail-img gambar">
-                    <a href="blog-details.php?id=<?php echo $row['id']; ?>"><div class="bottom-left"><?php echo $row['title']; ?></div></a>
-                    <a href="blog-details.php?id=<?php echo $row['id']; ?>"><p class="berita__detail bottom-left2">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p></a>
+                    <h2 class="detail__title">Berita & Program yang akan dan <br> sudah dilaksanakan BEM BIU </h2>
+                    <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="detail-img">
+                     <a href="blog-details.php?id=<?php echo $row['id']; ?>"><div class="bottom-left"><?php echo $row['title']; ?></div></a>
+                    <a href="blog-details.php?id=<?php echo $row['id']; ?>"><p class="berita__detail bottom-left2"><?php echo $row['descrip']; ?>"</p></a>
                 </div>
                 <?php
                         }
@@ -176,7 +223,7 @@ order by id limit 3 ");
                         {
                     ?>
                 <div class="berita__card">
-                    <img src="admin/images/blog/<?php echo $row['img']; ?>" style="height:300px;width:300px;" class="cards__berita-img" alt="">
+                    <img src="admin/images/blog/<?php echo $row['img']; ?>"class="cards__berita-img" alt="">
                     <div class="detail__upload-berita">
                         <h3 class="jenis__page-berita">Berita</h3>
                         <i class="ri-arrow-right-s-line"></i>
@@ -197,7 +244,7 @@ order by id limit 3 ");
                         {
                     ?>
                 <div class="program__card">
-                    <img src="admin/images/services/<?php echo $row['img']; ?>" style="height:300px;width:300px;" class="cards__berita-img" alt="">
+                    <img src="admin/images/services/<?php echo $row['img']; ?>"class="cards__berita-img" alt="">
                     <div class="detail__upload-berita">
                         <h3 class="jenis__page-berita">Program</h3>
                         <i class="ri-arrow-right-s-line"></i>
@@ -217,79 +264,8 @@ order by id limit 3 ");
         </section>
     </main>
     <!--==================== FOOTER ====================-->
-    <footer class="footer section ">
-        <div class="footer__container container grid ">
-            <div class="footer__content ">
-                <a href="# " class="footer__logo ">
-                    <img src="assets/img/klogo2.png" alt="">
-                    <img src="assets/img/logobiu-removebg-preview.png" alt="">
-                </a>
+    <?php include "footer.php" ?>
 
-                <h3 class="footer__title ">
-                    Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
-                </h3>
-
-                <div class="footer__social ">
-                    <a href="https://www.facebook.com/ " class="footer__social-link ">
-                        <i class="ri-facebook-fill "></i>
-                    </a>
-                    <a href="https://www.instagram.com/ " class="footer__social-link ">
-                        <i class="ri-instagram-line "></i>
-                    </a>
-                    <a href="https://twitter.com/ " class="footer__social-link ">
-                        <i class="ri-twitter-fill "></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="footer__content ">
-                <h3 class="footer__title ">Divisi</h3>
-
-                <ul class="footer__data ">
-                    <a href="#">
-                        <li class="footer__information "> Kominfo</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Minat dan Bakat</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Social dan <br>Masyarakat </li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Penelitian dan PKM</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Pengembangan SDM</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="footer__content ">
-                <h3 class="footer__title ">BEM BIU</h3>
-
-                <ul class="footer__data ">
-                    <a href="#">
-                        <li class="footer__information ">Struktur</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Program</li>
-                    </a>
-                    <a href="#">
-                        <li class="footer__information ">Sejarah</li>
-                    </a>
-                    </a>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Hubungi Kami
-                </h3>
-                <a href="#" class="button footer__button">Hubungi Kami</a>
-            </div>
-        </div>
-
-    </footer>
 
 
     <!--=============== SCROLL UP ===============-->

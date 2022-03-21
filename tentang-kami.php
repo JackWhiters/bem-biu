@@ -25,7 +25,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="index.php" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
                         <a href="tentang-kami.php" class="nav__link active-link">Tentang Kami</a>
@@ -44,7 +44,7 @@
                         <a href="struktur-divisi.php" class="nav__link">Struktur & Divisi</a>
                     </li>
                     <li class="nav__item">
-                        <a href="ukm.php" class="nav__link">ukm</a>
+                        <a href="ukm.php" class="nav__link">UKM</a>
                     </li>
                     <li class="nav__item">
                         <a href="contact.php" class="nav__link button--ghost">Hubungi Kami</a>
@@ -101,79 +101,8 @@
         </section>
 
         <!--==================== FOOTER ====================-->
-        <footer class="footer section ">
-            <div class="footer__container container grid ">
-                <div class="footer__content ">
-                    <a href="# " class="footer__logo ">
-                        <img src="assets/img/klogo2.png" alt="">
-                        <img src="assets/img/logobiu-removebg-preview.png" alt="">
-                    </a>
+        <?php include "footer.php" ?>
 
-                    <h3 class="footer__title ">
-                        Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
-                    </h3>
-
-                    <div class="footer__social ">
-                        <a href="https://www.facebook.com/ " class="footer__social-link ">
-                            <i class="ri-facebook-fill "></i>
-                        </a>
-                        <a href="https://www.instagram.com/ " class="footer__social-link ">
-                            <i class="ri-instagram-line "></i>
-                        </a>
-                        <a href="https://twitter.com/ " class="footer__social-link ">
-                            <i class="ri-twitter-fill "></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer__content ">
-                    <h3 class="footer__title ">Divisi</h3>
-
-                    <ul class="footer__data ">
-                        <a href="#">
-                            <li class="footer__information "> Kominfo</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Minat dan Bakat</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Social dan <br>Masyarakat </li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Penelitian dan PKM</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Pengembangan SDM</li>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="footer__content ">
-                    <h3 class="footer__title ">BEM BIU</h3>
-
-                    <ul class="footer__data ">
-                        <a href="#">
-                            <li class="footer__information ">Struktur</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Program</li>
-                        </a>
-                        <a href="#">
-                            <li class="footer__information ">Sejarah</li>
-                        </a>
-                        </a>
-                    </ul>
-                </div>
-
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Hubungi Kami
-                    </h3>
-                    <a href="#" class="button footer__button">Hubungi Kami</a>
-                </div>
-            </div>
-
-        </footer>
 
         <!--=============== SCROLL UP ===============-->
         <a href="# " class="scrollup " id="scroll-up ">

@@ -29,7 +29,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from st.ourhtmldemo.com/new/Transida2/blog-details.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 21 Jan 2021 08:08:07 GMT -->
 <head>
 <meta charset="utf-8">
 <title><?php echo $setting['site_name']; ?> - <?php echo $fetch['title']; ?></title>
@@ -40,7 +39,7 @@
 <!-- Color File -->
 <link href="assets/css/color.css" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Yantramanav:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="assets/img/logo-kabinet.png" type="image/x-icon">
     
   <script>
@@ -65,7 +64,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=601e75803d01430011c105c8&product=image-share-buttons" async="async"></script>
 </head>
 
 <body>
@@ -81,7 +79,7 @@
             <div class="detail-berita__container container grid">
                 <div class="detail__data">
                     <h2 class="detail__title"><?php echo $fetch['title']; ?></h2>
-                <img src="admin/images/services/<?php echo $fetch['img']; ?>" style="min-height:600px;min-width:600px;max-height:600px;max-width:600px" alt="" class="card__detail-img">
+                <img src="admin/images/services/<?php echo $fetch['img']; ?>" alt="" class="card__detail-img">
 
                 </div>
             </div>

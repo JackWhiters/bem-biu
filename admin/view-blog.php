@@ -98,10 +98,10 @@ $serial = ($page-1) * $limit;
               <table class="table">
                 <thead>
                   <tr>
-                    <th>Img</th>
-                    <th>Title</th>
+                    <th>Gambar</th>
+                    <th>Judul</th>
                     <!-- <th>Category</th> -->
-					<th>Description</th>
+					<th>Deskripsi Singkat</th>
                     
                     <th></th>
                   </tr>
@@ -114,7 +114,7 @@ $serial = ($page-1) * $limit;
 					<td><img style="width:150px;" src="images/blog/<?php echo $roww["img"]; ?>"></td>
                     <td><?php echo $roww["title"]; ?></td>
                     <td><?php echo $roww["category"]; ?></td>
-					<td><?php $dec = $roww['descrip'];
+					<td><?php $dec = $roww['short'];
 								$removetag = strip_tags($dec);
 								$trim = $string = substr($removetag,0,600);
 								echo $trim ; ?>..</td>

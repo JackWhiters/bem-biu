@@ -45,6 +45,8 @@ if(isset($_POST['publise'])){
 	
 $title1 = $_POST['title'];
 $title = str_replace("'","\'", $title1);
+$short1 = $_POST['short'];
+$short = str_replace("'","\'", $short1);
 $category = $_POST['category'];
 $descrip1 = $_POST['descrip'];
 $descrip = str_replace("'","\'", $descrip1);
@@ -77,14 +79,14 @@ $valid_ext = array(['png','jpeg','jpg']);
 
 if($edit==''){
   move_uploaded_file($tempname, $folder);
-$insertdata = mysqli_query($con,"INSERT INTO blog(title,category,descrip,img,url,date,status)VALUES('$title','$category','$descrip','$lis_img','$url','$today','0')");
+$insertdata = mysqli_query($con,"INSERT INTO blog(title,short,category,descrip,img,url,date,status)VALUES('$title','$short','$category','$descrip','$lis_img','$url','$today','0')");
 echo "<script>alert('Posted Successfully');</script>
 	<script>window.location.href = 'add-blog.php'</script>";
 }
 else
 {
   move_uploaded_file($tempname, $folder);
-$insertdata = mysqli_query($con,"UPDATE blog SET title='$title',category='$category',descrip='$descrip',img='$lis_img',url='$url',date='$today' where id='.$edit.'");
+$insertdata = mysqli_query($con,"UPDATE blog SET title='$title',short='$short',category='$category',descrip='$descrip',img='$lis_img',url='$url',date='$today' where id='.$edit.'");
 echo "<script>alert('Updated Successfully');</script>
 	<script>window.location.href = 'add-blog.php'</script>";
 }
@@ -132,8 +134,8 @@ function compressImage($source, $destination, $quality) {
           <div class="card card-outline card-info">
 			<div class="card-header">
              <div class="form-group">
-                  <label>Masukkan Judul</label>
-                 <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
+                  <label>Masukkan (Maksimal 60 Karakter)</label>
+                 <input name="title" maxlength="60" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
             	<!-- <div class="card-header">
@@ -152,7 +154,13 @@ function compressImage($source, $destination, $quality) {
                   </select>
                 </div>
             </div> -->
-			
+			            
+      <div class="card-body pad">
+			<label>Deskripsi Singkat (Maksimal 100 Karakter)</label>
+              <div class="mb-3">
+                <textarea name="short" placeholder="Short Description" maxlength="100" style="width: 100%;" rows="5" cols="23"><?php echo $roww["short"]; ?></textarea>
+              </div>
+            </div>
 			<div class="card-body pad">
 			<label>Masukkan Deskripsi</label>
               <div class="mb-3">

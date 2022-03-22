@@ -112,8 +112,8 @@ echo "<script>alert('Updated Successfully');</script>
 			 
 			<div class="card-header">
              <div class="form-group">
-                  <label>Masukkan Judul</label>
-                 <input name="title" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
+                  <label>Masukkan Judul (Maksimal 60 Karakter)</label>
+                 <input name="title"  maxlength="60" value="<?php echo $roww["title"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                 </div>
             </div>
                         	<div class="card-header">
@@ -134,9 +134,9 @@ echo "<script>alert('Updated Successfully');</script>
             </div>
             
             <div class="card-body pad">
-			<label>Deskripsi Singkat</label>
+			<label>Deskripsi Singkat (Maksimal 100 Karakter)</label>
               <div class="mb-3">
-                <textarea name="short" placeholder="Short Description" style="width: 100%;" rows="5" cols="23"><?php echo $roww["short"]; ?></textarea>
+                <textarea name="short" placeholder="Short Description" maxlength="100" style="width: 100%;" rows="5" cols="23"><?php echo $roww["short"]; ?></textarea>
               </div>
             </div>
             	

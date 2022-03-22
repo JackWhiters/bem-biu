@@ -41,8 +41,7 @@ order by id limit 3 ");
 <!-- <link href="assets/css/responsive.css" rel="stylesheet"> -->
 <!-- Color File -->
 <!-- <link href="assets/css/color.css" rel="stylesheet"> -->
-
-
+<link style="assets/css/stylesss3.css" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&amp;family=Yantramanav:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
@@ -180,7 +179,7 @@ order by id limit 3 ");
                     ?>
              
             <div class="berita__container grid">
-                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img ">
+                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img" style="max-height:350px;max-width:500px;">
                 <div class="berita__data-terbaru">
                     <div class="detail__upload-berita">
                         <h3 class="jenis__page-berita">Berita</h3>
@@ -188,7 +187,7 @@ order by id limit 3 ");
                         <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
                     </div>
                     <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
-                    <p class="berita__detail">Kegiatan Pemira Untuk pergantian Ketua maupun wakil ketua Badan Eksekutif Mahasiswa Universitas Bina Insani</p>
+                    <p class="berita__detail"><?php echo $row['short']; ?></p>
                     <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
                         <i class="ri-arrow-right-s-line"></i>
                     </a>
@@ -204,15 +203,15 @@ order by id limit 3 ");
                         {
                     ?>
                         <div class="berita__card">
-                            <img src="admin/images/blog/<?php echo $row['img']; ?>" class="cards__berita-img" alt="">
+                            <img src="admin/images/blog/<?php echo $row['img']; ?>"class="cards__berita-img" alt="">
 
                             <div class="detail__upload-berita">
                                 <h3 class="jenis__page-berita">Berita</h3>
                                 <i class="ri-arrow-right-s-line"></i>
-                                <p class="tanggal__upload-berita">20 JAN 2022</p>
+                                <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
                             </div>
                             <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
-                            <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                            <p class="berita__detail"><?php echo $row['short']; ?></p>
                             <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
                                 <i class="ri-arrow-right-s-line"></i>
                             </a>
@@ -243,7 +242,7 @@ order by id limit 3 ");
                         <div class="detail__upload-berita">
                             <h3 class="jenis__page-berita">Program</h3>
                             <i class="ri-arrow-right-s-line"></i>
-                            <p class="tanggal__upload-berita"><?php echo $row['date']; ?><</p>
+                            <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
                         </div>
                         <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
                         <p class="berita__detail"><?php echo $row['descrip']; ?></p>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2022 at 04:15 PM
+-- Generation Time: Mar 22, 2022 at 04:16 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -49,14 +49,24 @@ INSERT INTO `admin` (`ad_id`, `ad_name`, `ad_email`, `ad_password`) VALUES
 
 CREATE TABLE `blog` (
   `id` int(100) NOT NULL,
-  `title` varchar(1000) DEFAULT NULL,
+  `title` varchar(60) DEFAULT NULL,
   `category` varchar(255) DEFAULT NULL,
-  `descrip` varchar(10000) DEFAULT NULL,
+  `short` varchar(100) NOT NULL,
+  `descrip` varchar(500) DEFAULT NULL,
   `img` varchar(100) DEFAULT NULL,
   `url` varchar(255) DEFAULT NULL,
   `date` varchar(100) DEFAULT NULL,
   `status` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `blog`
+--
+
+INSERT INTO `blog` (`id`, `title`, `category`, `short`, `descrip`, `img`, `url`, `date`, `status`) VALUES
+(17, 'ini hanya judul dengan deskripsi maksimal 60 karakter', '', 'ini hanya deskripsi singkat dari sebuah berita dan jumlahnya 80 karakter', '<p>haloo pastikan membuat ini</p><p>dengan menggunakan spasi lebih banyak yak atau kalau perlu gunakan word agar lebih rapih</p>', '580961202berita$program1.jpeg', '', 'Tue 22 Mar 2022', '0'),
+(18, 'ini hanya judul dengan jumlah maksimal 60 karakter saja maaf', '', 'ini hanya deskripsi dengan jumlah maksimal 100 karakter dimana kalau lebih overflow bang maaf yak...', '<p>dan ini judul setiap spasi itu berarti paragraf kalau bisa buat serapih mungkin yakdi word lebih baik</p><p>biar lebih rapih aja gitu</p>', '342914769berita&program.jpeg', '', 'Tue 22 Mar 2022', '0'),
+(19, 'ini hanya judul dengna maksimal karakter itu hanya 60 saja..', '', 'ini hanya deskripsi singkat yang berisi maksimal 100 karakter saja bang jadi maaf engga bisa banyak.', '<p>nah ini baru bisa banyak soalnya maksimalnya itu 500 karakter jadi lu mau ngebacot sebanyak apapun bisa deh pokonya</p><p>silahkan tambahin aja kreatifitas lu di page ini bang jadi santay dan still chill bro dan buat kontent yang bagus yak untuk kemajuan bem kedepanya&nbsp;</p><p>still chill and update kontent</p>', '2126500616gambar-berita.jpeg', '', 'Tue 22 Mar 2022', '0');
 
 -- --------------------------------------------------------
 
@@ -176,15 +186,24 @@ INSERT INTO `media` (`id`, `file_name`, `uploaded_on`, `status`) VALUES
 
 CREATE TABLE `services` (
   `id` int(100) NOT NULL,
-  `title` varchar(1000) DEFAULT NULL,
-  `short` varchar(1500) DEFAULT NULL,
-  `descrip` varchar(10000) DEFAULT NULL,
+  `title` varchar(60) DEFAULT NULL,
+  `short` varchar(100) DEFAULT NULL,
+  `descrip` varchar(500) DEFAULT NULL,
   `img` varchar(100) DEFAULT NULL,
   `url` varchar(255) DEFAULT NULL,
   `date` varchar(100) DEFAULT NULL,
   `category` varchar(55) NOT NULL,
   `status` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `title`, `short`, `descrip`, `img`, `url`, `date`, `category`, `status`) VALUES
+(41, 'Rumah Mengajar', 'rumah mengajar biu, dimana BEM turun ke masyarakat untuk mengajar anak anak SD - SMP', '<p><span style=\"font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus consectetur iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce hendrerit nulla nisi, id condimentum dolor rutrum eu. Duis interdum leo nec erat sagittis, vitae porta arcu ornare. Fusce augue nunc, suscipit eget rhoncus et, aliquet in leo. Morbi laoreet malesuada en', '839562272bansos.jpeg', NULL, 'Tue 22 Mar 2022', 'Keilmuan', '0'),
+(42, 'test aja ini cuma test', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus consectetur iaculis. Vestib', '<p><span style=\"font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus consectetur iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce hendrerit nulla nisi, id condimentum dolor rutrum eu. Duis interdum leo nec erat sagittis, vitae porta arcu ornare. Fusce augue nunc, suscipit eget rhoncus et, aliquet in leo. Morbi laoreet malesuada en', '685573949razia.jpeg', NULL, 'Tue 22 Mar 2022', 'Kominfo', '0'),
+(43, 'hanya test aja maksimal 60 karakter yak gaes buat judulnya..', 'halo deskripsi ini di program maupun berita maksimal 100 karakter yak gaes gak bisa lebih overflow', '<p><span style=\"font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; text-align: justify;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus consectetur iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce hendrerit nulla nisi, id condimentum dolor rutrum eu. Duis interdum leo nec erat sagittis, vitae porta arcu ornare. Fusce augue nunc, suscipit eget rhoncus et, aliquet in leo. Morbi laoreet malesuada en', '844040101studi_banding.jpeg', NULL, 'Tue 22 Mar 2022', 'Sosmas', '0');
 
 -- --------------------------------------------------------
 
@@ -325,7 +344,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -361,7 +380,7 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `settings`

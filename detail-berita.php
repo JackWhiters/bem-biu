@@ -69,7 +69,7 @@ order by id limit 3 ");
             left:30px;
             /* text-shadow:0 0 1px black; */
              -webkit-text-stroke: 1px black;
-            font-size:35px;
+            font-size:25px;
             z-index:10;
             border: radius 5px;
             border-color:black;
@@ -79,14 +79,16 @@ order by id limit 3 ");
         .bottom-left2 {
             position:relative;
             text-align:left;
-            bottom: 150px;
+            bottom: 130px;
             left:30px;
             text-border-radius:5px;
             border-color:white;
             text-shadow:2px 2px 2px white;
-            font-size:20px;
+            font-size:18px;
             color:black;
             text-align:left;
+            margin-right:15px;
+
         }
         .gambar {
             min-hegiht:600px;
@@ -96,7 +98,11 @@ order by id limit 3 ");
             max-width:1000px;
         }
 
-          @media only screen and (max-width: 600px)
+        .detail-berita {
+                  margin-bottom:130px;
+              }
+
+          @media only screen and (max-width: 800px)
           {
               .bottom-left {
                   position:relative;
@@ -107,13 +113,15 @@ order by id limit 3 ");
               }
               .bottom-left2 {
                   position:relative;
-                  font-size:14px;
+                  font-size:10px;
                   left:20px;
                   top:8px;
+                  margin-right:10px;
               }
 
               .detail-berita {
                   height:700px;
+                  padding-bottom:0px;
               }
 
               .detail__title {
@@ -124,11 +132,74 @@ order by id limit 3 ");
                   padding:0;
               }
           }
+
+        @media only screen and (max-width: 900px)
+          {
+              .bottom-left {
+                  position:relative;
+                  font-size:14px;
+                  top:5px;
+                  left:20px;
+                  
+              }
+              .bottom-left2 {
+                  position:relative;
+                  font-size:10px;
+                  left:20px;
+                  top:8px;
+                  margin-right:10px;
+              }
+
+              .detail-berita {
+                  height:800px;
+              }
+
+              .detail__title {
+                  font-size:35px;
+              }
+              .detail-img {
+                  top:100px;
+                  padding:0;
+              }
+          }
+
+    @media only screen and (max-width: 700px)
+          {
+              .bottom-left {
+                  position:relative;
+                  font-size:14px;
+                  top:110px;
+                  left:20px;
+                  
+              }
+              .bottom-left2 {
+                  position:relative;
+                  font-size:10px;
+                  left:20px;
+                  top:130px;
+                  margin-right:10px;
+              }
+
+              .detail-berita {
+                  height:800px;
+              }
+
+              .detail__title {
+                  font-size:35px;
+              }
+              .detail-img {
+                  top:200px;
+                  padding:0;
+              }
+              .detail-data {
+                  padding:0px;
+              }
+          }
            @media only screen and (max-width: 500px) {
             .bottom-left {
                   position:relative;
                   font-size:12px;
-                  top:5px;
+                  top:128px;
                   left:20px;
                   
               }
@@ -136,7 +207,7 @@ order by id limit 3 ");
                   position:relative;
                   font-size:12px;
                   left:20px;
-                  top:8px;
+                  top:135px;
               }
            }
     </style>
@@ -202,14 +273,14 @@ order by id limit 3 ");
                     ?>
                 <div class="detail__data" style="position:relative;">
                     <h2 class="detail__title">Berita & Program yang akan dan <br> sudah dilaksanakan BEM BIU </h2>
-                    <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="detail-img">
+                    <a href="blog-details.php?id=<?php echo $row['id']; ?>"><img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="detail-img"></a>
                      <a href="blog-details.php?id=<?php echo $row['id']; ?>"><div class="bottom-left"><?php echo $row['title']; ?></div></a>
-                    <a href="blog-details.php?id=<?php echo $row['id']; ?>"><p class="berita__detail bottom-left2"><?php echo $row['descrip']; ?>"</p></a>
+                     <p class="berita__detail bottom-left2"><?php echo $row['short']; ?>"</p></a>
                 </div>
-                <?php
+            </div>
+                            <?php
                         }
                 ?>
-            </div>
         </section>
 
         <section class="section berita container" id="berita">
@@ -230,7 +301,7 @@ order by id limit 3 ");
                         <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
                     </div>
                     <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
-                    <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                    <p class="berita__detail"><?php echo $row['short']; ?></p>
                     <a href="blog-details.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
                         <i class="ri-arrow-right-s-line"></i>
                     </a>
@@ -245,13 +316,13 @@ order by id limit 3 ");
                     ?>
                 <div class="program__card">
                     <img src="admin/images/services/<?php echo $row['img']; ?>"class="cards__berita-img" alt="">
-                    <div class="detail__upload-berita">
-                        <h3 class="jenis__page-berita">Program</h3>
+                    <div class="detail__upload-program">
+                        <h3 class="jenis__page-program">Program</h3>
                         <i class="ri-arrow-right-s-line"></i>
                         <p class="tanggal__upload-berita"><?php echo $row['date']; ?></p>
                     </div>
                     <h2 class="berita__title-desc"><?php echo $row['title']; ?></h2>
-                    <p class="berita__detail"><?php echo $row['descrip']; ?></p>
+                    <p class="berita__detail"><?php echo $row['short']; ?></p>
                     <a href="program.php?id=<?php echo $row['id']; ?>" class="button__berita">Lihat Selengkapnya 
                         <i class="ri-arrow-right-s-line"></i>
                     </a>

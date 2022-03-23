@@ -35,11 +35,11 @@ $a=3;
   <!-- Main Sidebar Container -->
   <?php include"sidebar.php"; ?>
 <?php
-date_default_timezone_set('Asia/Kolkata');
+date_default_timezone_set('Asia/jakarta');
 $today = date("D d M Y");
 $edit = $_GET['edit'];
 
- $resultt = mysqli_query($con,"SELECT * FROM services where id='.$edit.'");
+ $resultt = mysqli_query($con,"SELECT * FROM services where id=$edit");
  $roww = mysqli_fetch_array($resultt);
 
 if(isset($_POST['publise'])){
@@ -75,7 +75,7 @@ echo "<script>alert('Posted Successfully');</script>
 else{
 move_uploaded_file($tempname, $folder);
 
-$insertdata = mysqli_query($con,"UPDATE services SET title='$title',short='$short',category='$category',descrip='$descrip',img='$lis_img',date='$today' where id=".$edit."");
+$insertdata = mysqli_query($con,"UPDATE services SET title='$title',short='$short',category='$category',descrip='$descrip',img='$lis_img',date='$today' where id=$edit");
 echo "<script>alert('Updated Successfully');</script>
 	<script>window.location.href = 'add-services.php'</script>";
 }

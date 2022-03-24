@@ -1,3 +1,8 @@
+<?php
+    include "../admin/conn.php";
+    $pr = "Kominfo";
+    $program = mysqli_query($con,"SELECT * FROM services WHERE category='$pr' ORDER BY date DESC LIMIT 3");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -251,64 +256,27 @@
 <section class="program section container" id="program">
             <h2 class="divisi__title"> Program Kerja Divisi Komunikasi dan Informasi </h2>
             <div class="program__container grid">
+              <?php
+                        while($row=mysqli_fetch_array($program))
+                        {
+                    ?>
                 <div class="program__card">
                     <div class="detail__divisi">
-                        <p class="divisi__card-title"> Lomba dan Pameran Desain (Online)</p>
-                        <h2 class="divisi__card-desc">  diadakan secara offline dan online</h2>
+                        <p class="divisi__card-title">Program</p>
+                        <h2 class="divisi__card-desc"><?php echo $row['title']; ?></h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="../admin/images/services/<?php echo $row['img'];?>" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <h2 class="detail__title-divisi"><?php echo $row['short']; ?></h2>
+                        <a href="../program.php?id=<?php echo $row['id']; ?>" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="program__card">
-                    <div class="detail__divisi">
-                        <p class="divisi__card-title"> WEBINAR INTERNAL MENGENAI EDITING  </p>
-                        <h2 class="divisi__card-desc"> Secara Offline / Online</h2>
-                    </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
-
-                    <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
-                        <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="program__card">
-                    <div class="detail__divisi">
-                        <p class="divisi__card-title"> KOTAK SARAN MAHASISWA  & WEBSITE BEM </p>
-                        <h2 class="divisi__card-desc"> Diadakan secara online  </h2>
-                    </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
-
-                    <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
-                        <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="program__card">
-                    <div class="detail__divisi">
-                        <p class="divisi__card-title"> STUDI BANDING ANTAR KAMPUS</p>
-                        <h2 class="divisi__card-desc"> Diadakan secara online  </h2>
-                    </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
-
-                    <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
-                        <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                    </div>
+                    <?php
+                        }
+                        ?>
                 </div>
         </section>
 

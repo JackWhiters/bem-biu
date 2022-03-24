@@ -1,3 +1,8 @@
+<?php
+    include "../admin/conn.php";
+    $pr = "Minbak";
+    $program = mysqli_query($con,"SELECT * FROM services WHERE category='$pr' ORDER BY date DESC LIMIT 3");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,7 +78,7 @@
             <div class="detail-berita__container container grid">
                 <div class="detail__data">
                     <h2 class="detail__title">Divisi Minat Dan Bakat BEM BiU Khabinet Phoenix</h2>
-                <img src="assets/css/images/minbak-1.jpg" alt="" class="card__detail-img">
+                    <img src="assets/img/gambar-berita.jpeg" alt="" class="card__detail-img">
 
                 </div>
             </div>
@@ -284,49 +289,27 @@
 <section class="program section container" id="program">
             <h2 class="divisi__title"> Program Kerja Divisi Minat dan Bakat </h2>
             <div class="program__container grid">
+                    <?php
+                        while($row=mysqli_fetch_array($program))
+                        {
+                    ?>
                 <div class="program__card">
                     <div class="detail__divisi">
-                        <p class="divisi__card-title"> Pameran Hasil Karya Mahasiswa</p>
-                        <h2 class="divisi__card-desc">  diadakan secara offline dan online</h2>
+                        <p class="divisi__card-title">Program</p>
+                        <h2 class="divisi__card-desc"><?php echo $row['title']; ?></h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="../admin/images/services/<?php echo $row['img'];?>" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
+                        <h2 class="detail__title-divisi"><?php echo $row['short']; ?></h2>
+                        <a href="../program.php?id=<?php echo $row['id']; ?>" class="button__program">Baca Selengkapnya
                         <i class="ri-arrow-right-s-line"></i>
                         </a>
                     </div>
                 </div>
-                
-                <div class="program__card">
-                    <div class="detail__divisi">
-                        <p class="divisi__card-title"> PO BiU </p>
-                        <h2 class="divisi__card-desc"> Pekan Olahraga Bina Insani Universitas</h2>
-                    </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
-
-                    <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
-                        <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="program__card">
-                    <div class="detail__divisi">
-                        <p class="divisi__card-title"> Pensi </p>
-                        <h2 class="divisi__card-desc"> Pentas Seni yang diadakan secara offline </h2>
-                    </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
-
-                    <div class="detail__divisi-card">
-                        <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
-                        <a href="#" class="button__program">Baca Selengkapnya
-                        <i class="ri-arrow-right-s-line"></i>
-                        </a>
-                    </div>
+                    <?php
+                        }
+                        ?>
                 </div>
         </section>
 

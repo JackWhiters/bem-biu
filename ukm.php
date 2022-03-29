@@ -84,7 +84,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Computer Club</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/cc.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Computer atau Komputer.</h2>
@@ -99,7 +99,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Bulu Tangkis</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/bultang.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Olahraga Bulutangkis.</h2>
@@ -114,7 +114,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Language Club</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/language club.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Language atau Bahasa .</h2>
@@ -129,7 +129,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Lembaga Dakwah Kampus</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/ldk.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Kegiatan Agama Islam.</h2>
@@ -143,7 +143,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Paraswara</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/paraswara.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan kegiatan seperti Paduan Suara.</h2>
@@ -157,7 +157,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Seni Tari</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/seni-tari.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Tari atau Kegiatan seperti Menari.</h2>
@@ -171,7 +171,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Bina Insani Pencita Alam</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/binapala.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Alam.</h2>
@@ -185,7 +185,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Futsal</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/futsal-l.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Olahraga Futsal.</h2>
@@ -199,7 +199,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Accounting Club</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/accounting.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Accounting atau Akuntans</h2>
@@ -213,7 +213,7 @@
                     <p class="ukm__card-title">UKM</p>
                     <h2 class="ukm__card-desc">Personal Development</h2>
                 </div>
-                <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                <img src="admin/images/divisi/pd.jpg" class="cards__program-img" alt="">
 
                 <div class="detail__divisi-card">
                     <h2 class="detail__title-divisi">UKM ini bergerak di bidang yang berkaitan dengan Pengembangan diri seperti Soft Skill.</h2>

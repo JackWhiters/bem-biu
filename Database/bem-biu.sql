@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 22, 2022 at 04:16 AM
+-- Generation Time: Mar 29, 2022 at 06:10 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -64,9 +64,12 @@ CREATE TABLE `blog` (
 --
 
 INSERT INTO `blog` (`id`, `title`, `category`, `short`, `descrip`, `img`, `url`, `date`, `status`) VALUES
-(17, 'ini hanya judul dengan deskripsi maksimal 60 karakter', '', 'ini hanya deskripsi singkat dari sebuah berita dan jumlahnya 80 karakter', '<p>haloo pastikan membuat ini</p><p>dengan menggunakan spasi lebih banyak yak atau kalau perlu gunakan word agar lebih rapih</p>', '580961202berita$program1.jpeg', '', 'Tue 22 Mar 2022', '0'),
-(18, 'ini hanya judul dengan jumlah maksimal 60 karakter saja maaf', '', 'ini hanya deskripsi dengan jumlah maksimal 100 karakter dimana kalau lebih overflow bang maaf yak...', '<p>dan ini judul setiap spasi itu berarti paragraf kalau bisa buat serapih mungkin yakdi word lebih baik</p><p>biar lebih rapih aja gitu</p>', '342914769berita&program.jpeg', '', 'Tue 22 Mar 2022', '0'),
-(19, 'ini hanya judul dengna maksimal karakter itu hanya 60 saja..', '', 'ini hanya deskripsi singkat yang berisi maksimal 100 karakter saja bang jadi maaf engga bisa banyak.', '<p>nah ini baru bisa banyak soalnya maksimalnya itu 500 karakter jadi lu mau ngebacot sebanyak apapun bisa deh pokonya</p><p>silahkan tambahin aja kreatifitas lu di page ini bang jadi santay dan still chill bro dan buat kontent yang bagus yak untuk kemajuan bem kedepanya&nbsp;</p><p>still chill and update kontent</p>', '2126500616gambar-berita.jpeg', '', 'Tue 22 Mar 2022', '0');
+(18, 'Kerjasama BEM BIU dengan ACT untuk Penggalangan Dana', '', 'Dalam kegiatan kemanusiaan akibat bencana alam Bem Biu melakukan kerjasama penggalangan dana untuk k', '<p><br></p>', '870683572277847727penggalan-dana.jpg', '', 'Wed 23 Mar 2022', '0'),
+(19, 'Liga Futsal Mahasiswa di LIFUMA', '', 'UKM futsal bina insani mengikuti liga LIIFUMA 2022 yang diadakan di STIE ', '<p><br></p><div><span data-metadata=\"<!--(figmeta)eyJmaWxlS2V5IjoiNFZhOU83QVRvQVh2U3RTT1BXME1kTiIsInBhc3RlSUQiOjI4NDI2MzM0NSwiZGF0YVR5cGUiOiJzY2VuZSJ9Cg==(/figmeta)-->\"></span><span data-buffer=\"<!--(figma)ZmlnLWtpd2kPAAAAgikAALV8e5hkSVVnRGRmPbq6e57MDAMiIiIi6ryAARG5mXmz8nbl4869N6u6x5EkK/NW1aXzRd7M6q4RERAVcXg/5SXMDojIIiIKsoiIqIiIiIiIiIjo7rKs6+66u6676+7vnIj7yKoev/1HPqbixIkTJ06cOHHixImb/QHZDOO4tx8GR9NQiKvOtZ1W1w8sLxD4X6tdtbuVutXatH1UZce3vVxdMbXdqgIu+M5my2oAKvrBhYYNoMRA17eJ1wrTMueuv+W4Xc9utC3qudpqB0', '18196962381910640843futsal.jpg', '', 'Wed 23 Mar 2022', '0'),
+(21, 'Program Kerja Divisi Kominfo x Minat Bakat', '', 'Program kerja yang akan dilaksanakan oleh divisi Kominfo dan Minat Bakat di bulan april 2022 nanti.', '<p>Program kerja yang akan dilaksanakan oleh divisi Kominfo dan Minat Bakat di bulan april 2022 nanti</p>', '151768481pameran.jpg', '', 'Tue 22 Mar 2022', '0'),
+(22, 'Liga Futsal Mahasiswa di LIFUMA 2022', '', 'UKM Futsal Bina Insani mengikuti liga LIFUMA 2022 ', '<p>UKM Futsal Bina Insani mengikuti liga LIFUMA 2022 yang diadakan di STIE<br></p>', '19524815858138859321910640843futsal.jpg', '', 'Tue 22 Mar 2022', '0'),
+(24, 'Kerjasama BEM BiU dengan ACT untuk Pelanggalangan Dana', '', 'Dalam kegiatan kemanusiaan akibat bencana alam Bem Biu melakukan kerjasama penggalangan dana', '<p>Dalam rangka kegiatan kemanusiaan akibat bencana alam BiU melaksanakan kerjasama penggalangan dana untuk korban bencana alam</p><div><span data-metadata=\"<!--(figmeta)eyJmaWxlS2V5IjoiNFZhOU83QVRvQVh2U3RTT1BXME1kTiIsInBhc3RlSUQiOjE0MjI4NjMxNDcsImRhdGFUeXBlIjoic2NlbmUifQo=(/figmeta)-->\"></span><span data-buffer=\"<!--(figma)ZmlnLWtpd2kPAAAAgikAALV8e5hkSVVnRGRmPbq6e57MDAMiIiIi6ryAARG5mXmz8nbl4869N6u6x5EkK/NW1aXzRd7M6q4RERAVcXg/5SXMDojIIiIKsoiIqIiIiIiIiIjo7rKs6+66u6676+7vnIj7yKoev/1HPqbixIkTJ06cOH', '277847727penggalan-dana.jpg', '', 'Tue 22 Mar 2022', '0'),
+(25, 'Sertijab  Angkatan 2022/2023', '', 'Badan Eksekutif Mahasiswa Bina Insani University akan melaksanakan sertijab setelah melakukan Pemira', '<p><span data-metadata=\"<!--(figmeta)eyJmaWxlS2V5IjoiNFZhOU83QVRvQVh2U3RTT1BXME1kTiIsInBhc3RlSUQiOjE4MjQzMDM5MDMsImRhdGFUeXBlIjoic2NlbmUifQo=(/figmeta)-->\"></span><span data-buffer=\"<!--(figma)ZmlnLWtpd2kPAAAAgikAALV8e5hkSVVnRGRmPbq6e57MDAMiIiIi6ryAARG5mXmz8nbl4869N6u6x5EkK/NW1aXzRd7M6q4RERAVcXg/5SXMDojIIiIKsoiIqIiIiIiIiIjo7rKs6+66u6676+7vnIj7yKoev/1HPqbixIkTJ06cOHHixImb/QHZDOO4tx8GR9NQiKvOtZ1W1w8sLxD4X6tdtbuVutXatH1UZce3vVxdMbXdqgIu+M5my2oAKvrBhYYNoMRA17eJ1wrTMueuv+W4Xc9utC3qudpqB07tQtevtzuNarf', '1747618980876964702paslon-1-1.jpg', '', 'Tue 22 Mar 2022', '0');
 
 -- --------------------------------------------------------
 
@@ -344,13 +347,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `blog`
 --
 ALTER TABLE `blog`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `faqs`
@@ -380,7 +383,7 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `settings`

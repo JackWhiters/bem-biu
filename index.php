@@ -56,6 +56,13 @@ order by id limit 3 ");
 <!-- <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=601e75803d01430011c105c8&product=image-share-buttons' async='async'></script> -->
 
 <style>
+    .berita__terbaru-img
+    {
+        max-height:300px;
+        max-width:500px;
+        min-height:300px;
+        max-width:500px;
+    }
      @media only screen and (max-width: 600px) {
          .video__title{
              width:520px;
@@ -92,6 +99,13 @@ order by id limit 3 ");
          .video_bem {
              width:350px;
          }
+        .berita__terbaru-img
+        {
+        max-height:200px;
+        max-width:320px;
+        min-height:200px;
+        max-width:320px;
+        }
      }
 
               @media only screen and (max-width: 400px) {
@@ -179,7 +193,7 @@ order by id limit 3 ");
                     ?>
              
             <div class="berita__container grid">
-                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img" style="max-height:350px;max-width:500px;">
+                <img src="admin/images/blog/<?php echo $row['img']; ?>" alt="" class="berita__terbaru-img">
                 <div class="berita__data-terbaru">
                     <div class="detail__upload-berita">
                         <h3 class="jenis__page-berita">Berita</h3>

@@ -112,6 +112,26 @@
                     <div class="swiper-slide swiper-card">
                         <div class="swiper__card-content">
                             <div class="swiper-image">
+                                <img src="admin/images/team/sekre-2.jpg" class="swiper-image-img" alt="">
+                            </div>
+                            <h2 class="nama__profesi">Dewi Ariani</h2>
+                            <p class="desc__profesi">Sekertaris 2</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-card">
+                        <div class="swiper__card-content">
+                            <div class="swiper-image">
+                                <img src="admin/images/team/bendahara-1.jpg" class="swiper-image-img" alt="">
+                            </div>
+                            <h2 class="nama__profesi">Adelia Putri Pramesti </h2>
+                            <p class="desc__profesi">Bendahara 1</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide swiper-card">
+                        <div class="swiper__card-content">
+                            <div class="swiper-image">
                                 <img src="admin/images/team/siti.png" class="swiper-image-img" alt="">
                             </div>
                             <h2 class="nama__profesi">Siti Rahmah Nur Effendi</h2>
@@ -135,7 +155,7 @@
                         <p class="divisi__card-title">DIVISI</p>
                         <h2 class="divisi__card-desc">Divisi Keilmuan</h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="admin/images/divisi/keilmuan.jpg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
@@ -181,7 +201,7 @@
                         <p class="divisi__card-title">DIVISI</p>
                         <h2 class="divisi__card-desc">Divisi Sosial Masyarakat</h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="admin/images/divisi/sosmas.jpg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
@@ -196,7 +216,7 @@
                         <p class="divisi__card-title">DIVISI</p>
                         <h2 class="divisi__card-desc">Divisi PKM dan Penelitian</h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="admin/images/divisi/pkm.jpg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>
@@ -211,7 +231,7 @@
                         <p class="divisi__card-title">DIVISI</p>
                         <h2 class="divisi__card-desc">Divisi Sumber Daya Manusia</h2>
                     </div>
-                    <img src="assets/img/gambar-berita.jpeg" class="cards__program-img" alt="">
+                    <img src="admin/images/divisi/sdm.jpg" class="cards__program-img" alt="">
 
                     <div class="detail__divisi-card">
                         <h2 class="detail__title-divisi">Mengenal Lebih dekat dengan divisi kominfo beserta visi misi dan prokernya</h2>

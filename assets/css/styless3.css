@@ -1181,7 +1181,7 @@
         justify-content: center;
     }
     .berita__terbaru-img {
-        width: 400px;
+        width: relative;
         order: -1;
     }
     }
